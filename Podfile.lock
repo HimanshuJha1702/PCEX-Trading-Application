@@ -1,0 +1,80 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
+  - IQDropDownTextField (1.1.1)
+  - IQKeyboardManagerSwift (6.2.1)
+  - KeychainAccess (3.2.0)
+  - KRActivityIndicatorView (3.0.0)
+  - KRProgressHUD (3.4.0):
+    - KRActivityIndicatorView (= 3.0.0)
+  - MarqueeLabel/Swift (3.2.1)
+  - NotificationBannerSwift (2.0.1):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.2.0)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
+  - SnapKit (4.2.0)
+  - Socket.IO-Client-Swift (13.0.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.6)
+  - SwiftyGif (4.2.0)
+  - SwiftyJSON (4.3.0)
+  - VBRRollingPit (1.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireNetworkActivityIndicator
+  - IQDropDownTextField
+  - IQKeyboardManagerSwift
+  - KeychainAccess
+  - KRProgressHUD
+  - NotificationBannerSwift
+  - SDWebImage
+  - Socket.IO-Client-Swift (~> 13.0.0)
+  - Starscream
+  - SwiftyGif
+  - SwiftyJSON
+  - VBRRollingPit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - IQDropDownTextField
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SDWebImage
+    - SnapKit
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyGif
+    - SwiftyJSON
+    - VBRRollingPit
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
+  IQDropDownTextField: 3d2e5728a2b83ff5dbb14cb9b497a80005124cbe
+  IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
+  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
+  KRActivityIndicatorView: c414000730a6f4969eeb354bee4f2aebc89c2c2e
+  KRProgressHUD: 79c8703f82179fe34b3602f10b30726f887983fa
+  MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  NotificationBannerSwift: 007774aa590cc9680647b92b2f217bef5c00c32c
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Socket.IO-Client-Swift: 7055c89b7a9926b343194c4cac75998329c4a95a
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  VBRRollingPit: 62a79cc663aeea6a196878b3a907056617f96b6a
+
+PODFILE CHECKSUM: 783341fd850f59936b90e55e57e39346389ce301
+
+COCOAPODS: 1.6.1

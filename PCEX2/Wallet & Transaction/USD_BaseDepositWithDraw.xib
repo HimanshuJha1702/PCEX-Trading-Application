@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="USD_BaseDepositWithDraw" customModule="PCEX2" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="tgi-gM-Ugs" id="buC-Bs-oP9"/>
+                <outlet property="lblTitle" destination="3R9-ig-DZ9" id="IL9-vC-yh8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgi-gM-Ugs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXb-F7-fmf">
+                            <rect key="frame" x="8" y="42" width="95" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="HcB-gM-7fD"/>
+                                <constraint firstAttribute="width" constant="95" id="JnI-f2-Qmx"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="70" maxY="0.0"/>
+                            <state key="normal" image="back button"/>
+                            <connections>
+                                <action selector="btnBackAction:" destination="-1" eventType="touchUpInside" id="glY-aL-qCR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TItle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R9-ig-DZ9">
+                            <rect key="frame" x="190" y="47" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="division of top heading and content" translatesAutoresizingMaskIntoConstraints="NO" id="W6q-FL-qfI">
+                            <rect key="frame" x="5" y="87" width="404" height="2"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="xMO-Hb-x5c"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aiy-JI-cRU">
+                            <rect key="frame" x="371" y="42" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="hV9-3O-oiq"/>
+                                <constraint firstAttribute="height" constant="30" id="sWX-bz-ZId"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <state key="normal" image="history button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="W6q-FL-qfI" firstAttribute="top" secondItem="Aiy-JI-cRU" secondAttribute="bottom" constant="15" id="2ph-0m-YF0"/>
+                        <constraint firstAttribute="height" constant="92" id="6fy-Ft-750"/>
+                        <constraint firstItem="3R9-ig-DZ9" firstAttribute="centerX" secondItem="tgi-gM-Ugs" secondAttribute="centerX" id="AqU-Iz-mWh"/>
+                        <constraint firstItem="W6q-FL-qfI" firstAttribute="leading" secondItem="tgi-gM-Ugs" secondAttribute="leading" constant="5" id="JuB-bI-ATr"/>
+                        <constraint firstAttribute="bottom" secondItem="W6q-FL-qfI" secondAttribute="bottom" constant="3" id="PUb-yo-REh"/>
+                        <constraint firstItem="TXb-F7-fmf" firstAttribute="leading" secondItem="tgi-gM-Ugs" secondAttribute="leading" constant="8" id="TVN-W9-PgG"/>
+                        <constraint firstItem="W6q-FL-qfI" firstAttribute="top" secondItem="TXb-F7-fmf" secondAttribute="bottom" constant="15" id="U7j-UM-za7"/>
+                        <constraint firstItem="W6q-FL-qfI" firstAttribute="top" secondItem="3R9-ig-DZ9" secondAttribute="bottom" constant="19" id="i1Y-o0-Xnh"/>
+                        <constraint firstAttribute="trailing" secondItem="Aiy-JI-cRU" secondAttribute="trailing" constant="13" id="qji-Ty-5VD"/>
+                        <constraint firstAttribute="trailing" secondItem="W6q-FL-qfI" secondAttribute="trailing" constant="5" id="wiX-pd-T3q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tgi-gM-Ugs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wKB-F5-O2B"/>
+                <constraint firstItem="tgi-gM-Ugs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wN8-07-U5I"/>
+                <constraint firstItem="tgi-gM-Ugs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yET-Dm-ts7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back button" width="46.5" height="61.5"/>
+        <image name="division of top heading and content" width="762" height="6.5"/>
+        <image name="history button" width="52" height="51.5"/>
+    </resources>
+</document>

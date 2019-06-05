@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/rahulbansal/Desktop/chhagan/PCEX2/build/Debug-iphonesimulator/VBRRollingPit/VBRRollingPit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "VBRRollingPit-Swift.h",
+          'external-contents': "/Users/rahulbansal/Desktop/chhagan/PCEX2/build/Debug-iphonesimulator/VBRRollingPit/VBRRollingPit.framework/Headers/VBRRollingPit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "VBRRollingPit-umbrella.h",
+          'external-contents': "/Users/rahulbansal/Desktop/chhagan/PCEX2/Pods/Target Support Files/VBRRollingPit/VBRRollingPit-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rahulbansal/Desktop/chhagan/PCEX2/build/Debug-iphonesimulator/VBRRollingPit/VBRRollingPit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/rahulbansal/Desktop/chhagan/PCEX2/build/Pods.build/Debug-iphonesimulator/VBRRollingPit.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bank" rowHeight="200" id="KGk-i7-Jjw" customClass="BankCell" customModule="PCEX2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acc details" translatesAutoresizingMaskIntoConstraints="NO" id="6HD-6o-y4q">
+                        <rect key="frame" x="0.0" y="25" width="335" height="177"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbE-Uf-8Z6">
+                        <rect key="frame" x="25" y="41" width="113" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="113" id="SkM-ME-bCx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HDFC Bank" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFE-L5-eJb">
+                        <rect key="frame" x="143" y="41" width="167" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Acount number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWS-mY-ZKI">
+                        <rect key="frame" x="25" y="77" width="113" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="81001001223" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrg-h2-2vL">
+                        <rect key="frame" x="143" y="77" width="157" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Name       :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qn-xO-pab">
+                        <rect key="frame" x="25" y="105" width="113" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCBC Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26T-Nj-RAe">
+                        <rect key="frame" x="143" y="105" width="157" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IFSC Code        :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5a-Wu-hFp">
+                        <rect key="frame" x="25" y="133" width="113" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCBCSGSG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtN-pC-8yX">
+                        <rect key="frame" x="143" y="133" width="157" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Code        :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVo-qf-Roc">
+                        <rect key="frame" x="25" y="161" width="113" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCBCSGSG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqD-jj-gD3">
+                        <rect key="frame" x="143" y="161" width="157" height="18"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-UX-dEV">
+                        <rect key="frame" x="292" y="0.0" width="23" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="PKj-7M-fFg"/>
+                            <constraint firstAttribute="height" constant="27" id="g6s-zU-uFO"/>
+                        </constraints>
+                        <state key="normal" image="delete button"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Oc-3X-eFo">
+                        <rect key="frame" x="266" y="0.0" width="16" height="22"/>
+                        <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                        <state key="normal" image="pencil"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o5a-Wu-hFp" firstAttribute="width" secondItem="3Qn-xO-pab" secondAttribute="width" id="AIn-Z5-ow5"/>
+                    <constraint firstItem="CFE-L5-eJb" firstAttribute="leading" secondItem="tbE-Uf-8Z6" secondAttribute="trailing" constant="5" id="Am7-Jd-KAd"/>
+                    <constraint firstItem="tbE-Uf-8Z6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Aop-wM-yE8"/>
+                    <constraint firstItem="hSz-UX-dEV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="C2Y-7q-r65"/>
+                    <constraint firstItem="3Qn-xO-pab" firstAttribute="width" secondItem="CWS-mY-ZKI" secondAttribute="width" id="Cb6-zq-12W"/>
+                    <constraint firstAttribute="trailing" secondItem="qtN-pC-8yX" secondAttribute="trailing" constant="20" id="DmC-aa-5qg"/>
+                    <constraint firstItem="oqD-jj-gD3" firstAttribute="centerY" secondItem="mVo-qf-Roc" secondAttribute="centerY" id="EvQ-3a-Mm1"/>
+                    <constraint firstItem="CFE-L5-eJb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="FaA-Rq-AdP"/>
+                    <constraint firstItem="o5a-Wu-hFp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="Fqx-35-Ofb"/>
+                    <constraint firstAttribute="trailing" secondItem="CFE-L5-eJb" secondAttribute="trailing" constant="10" id="GUB-4k-mtE"/>
+                    <constraint firstAttribute="trailing" secondItem="6HD-6o-y4q" secondAttribute="trailing" constant="-15" id="Gfa-Sf-GjH"/>
+                    <constraint firstItem="3Qn-xO-pab" firstAttribute="top" secondItem="CWS-mY-ZKI" secondAttribute="bottom" constant="10" id="H2B-wE-cgq"/>
+                    <constraint firstItem="mVo-qf-Roc" firstAttribute="top" secondItem="o5a-Wu-hFp" secondAttribute="bottom" constant="10" id="I2d-vi-1bK"/>
+                    <constraint firstAttribute="trailing" secondItem="hSz-UX-dEV" secondAttribute="trailing" constant="5" id="IGZ-dj-61Z"/>
+                    <constraint firstItem="5Oc-3X-eFo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JOf-RN-PMb"/>
+                    <constraint firstItem="CWS-mY-ZKI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="MHi-C7-TSs"/>
+                    <constraint firstItem="qtN-pC-8yX" firstAttribute="leading" secondItem="o5a-Wu-hFp" secondAttribute="trailing" constant="5" id="O2Q-XQ-NSB"/>
+                    <constraint firstItem="oqD-jj-gD3" firstAttribute="leading" secondItem="mVo-qf-Roc" secondAttribute="trailing" constant="5" id="ONi-qe-vvw"/>
+                    <constraint firstItem="vrg-h2-2vL" firstAttribute="centerY" secondItem="CWS-mY-ZKI" secondAttribute="centerY" id="QnM-R6-Oap"/>
+                    <constraint firstItem="CWS-mY-ZKI" firstAttribute="top" secondItem="tbE-Uf-8Z6" secondAttribute="bottom" constant="18" id="RSD-tX-Fp2"/>
+                    <constraint firstItem="mVo-qf-Roc" firstAttribute="width" secondItem="o5a-Wu-hFp" secondAttribute="width" id="TGV-rW-Xca"/>
+                    <constraint firstItem="26T-Nj-RAe" firstAttribute="centerY" secondItem="3Qn-xO-pab" secondAttribute="centerY" id="TYq-s6-bdC"/>
+                    <constraint firstItem="CWS-mY-ZKI" firstAttribute="width" secondItem="tbE-Uf-8Z6" secondAttribute="width" id="TcJ-R2-DYY"/>
+                    <constraint firstAttribute="trailing" secondItem="vrg-h2-2vL" secondAttribute="trailing" constant="20" id="WVQ-kb-Dl6"/>
+                    <constraint firstItem="6HD-6o-y4q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="ZSn-Ok-EMq"/>
+                    <constraint firstItem="o5a-Wu-hFp" firstAttribute="top" secondItem="3Qn-xO-pab" secondAttribute="bottom" constant="10" id="ZXf-MH-d6D"/>
+                    <constraint firstItem="qtN-pC-8yX" firstAttribute="centerY" secondItem="o5a-Wu-hFp" secondAttribute="centerY" id="aKa-iY-BqL"/>
+                    <constraint firstAttribute="trailing" secondItem="26T-Nj-RAe" secondAttribute="trailing" constant="20" id="cuU-2U-eET"/>
+                    <constraint firstItem="6HD-6o-y4q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kUs-FH-Uyz"/>
+                    <constraint firstItem="26T-Nj-RAe" firstAttribute="leading" secondItem="3Qn-xO-pab" secondAttribute="trailing" constant="5" id="kbT-h0-Gjd"/>
+                    <constraint firstItem="3Qn-xO-pab" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="lC2-Ym-RCC"/>
+                    <constraint firstItem="tbE-Uf-8Z6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="oFg-sh-2N0"/>
+                    <constraint firstAttribute="trailing" secondItem="oqD-jj-gD3" secondAttribute="trailing" constant="20" id="q3P-p5-ufl"/>
+                    <constraint firstItem="hSz-UX-dEV" firstAttribute="leading" secondItem="5Oc-3X-eFo" secondAttribute="trailing" constant="10" id="qNy-Se-LzY"/>
+                    <constraint firstItem="vrg-h2-2vL" firstAttribute="leading" secondItem="CWS-mY-ZKI" secondAttribute="trailing" constant="5" id="tFf-lV-oh4"/>
+                    <constraint firstItem="mVo-qf-Roc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="wJM-m5-poR"/>
+                    <constraint firstAttribute="bottom" secondItem="6HD-6o-y4q" secondAttribute="bottom" constant="-2.5" id="z2Y-r8-EcC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDelete" destination="hSz-UX-dEV" id="yRs-6J-isr"/>
+                <outlet property="btnEdit" destination="5Oc-3X-eFo" id="51O-KT-TWk"/>
+                <outlet property="lblAccountNumber" destination="vrg-h2-2vL" id="eIA-xg-PgT"/>
+                <outlet property="lblBankName" destination="26T-Nj-RAe" id="EcI-7H-zoL"/>
+                <outlet property="lblIfscCode" destination="qtN-pC-8yX" id="TWL-8E-QzS"/>
+                <outlet property="lblSwiftCode" destination="oqD-jj-gD3" id="tHh-8j-Ndp"/>
+                <outlet property="lblUserBankName" destination="CFE-L5-eJb" id="tKc-UG-LEu"/>
+            </connections>
+            <point key="canvasLocation" x="301.44927536231887" y="43.526785714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="acc details" width="640.5" height="368.5"/>
+        <image name="delete button" width="22.5" height="26.5"/>
+        <image name="pencil" width="29.5" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="logs" rowHeight="110" id="KGk-i7-Jjw" customClass="LogsCell" customModule="PCEX2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="78.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logs 2nd page box" translatesAutoresizingMaskIntoConstraints="NO" id="L4p-35-OcZ">
+                        <rect key="frame" x="10" y="0.0" width="310" height="78.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#25187" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-gx-PGl">
+                        <rect key="frame" x="26" y="15" width="75" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="XHx-52-ksC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="feL-CA-4Jo">
+                        <rect key="frame" x="26" y="36" width="81" height="12"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="division of values" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-F7-Guv">
+                        <rect key="frame" x="109" y="8" width="3" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="RnJ-uU-gBo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fa8-Fe-kRW">
+                        <rect key="frame" x="117" y="5" width="178" height="50"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y8P-gx-PGl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="0ud-Jh-iCo"/>
+                    <constraint firstItem="ca2-F7-Guv" firstAttribute="leading" secondItem="y8P-gx-PGl" secondAttribute="trailing" constant="8" id="7v0-31-Gfv"/>
+                    <constraint firstItem="ca2-F7-Guv" firstAttribute="leading" secondItem="feL-CA-4Jo" secondAttribute="trailing" constant="2" id="An1-zF-Z26"/>
+                    <constraint firstItem="feL-CA-4Jo" firstAttribute="top" secondItem="y8P-gx-PGl" secondAttribute="bottom" constant="5" id="CFN-i0-ZZQ"/>
+                    <constraint firstAttribute="bottom" secondItem="feL-CA-4Jo" secondAttribute="bottom" constant="30.5" id="Df4-if-h1m"/>
+                    <constraint firstItem="L4p-35-OcZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HlD-DR-DIU"/>
+                    <constraint firstItem="L4p-35-OcZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="HzB-td-MUK"/>
+                    <constraint firstAttribute="bottom" secondItem="L4p-35-OcZ" secondAttribute="bottom" id="Jvh-bO-jsT"/>
+                    <constraint firstAttribute="trailing" secondItem="L4p-35-OcZ" secondAttribute="trailing" id="QrW-Gn-c5m"/>
+                    <constraint firstAttribute="trailing" secondItem="Fa8-Fe-kRW" secondAttribute="trailing" constant="25" id="R54-hb-x4U"/>
+                    <constraint firstItem="y8P-gx-PGl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="al1-sJ-gLc"/>
+                    <constraint firstAttribute="bottom" secondItem="Fa8-Fe-kRW" secondAttribute="bottom" constant="23.5" id="bEM-sS-zbm"/>
+                    <constraint firstAttribute="bottom" secondItem="ca2-F7-Guv" secondAttribute="bottom" constant="24.5" id="nDy-pk-ZiT"/>
+                    <constraint firstItem="Fa8-Fe-kRW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="s3p-Uu-HWm"/>
+                    <constraint firstItem="Fa8-Fe-kRW" firstAttribute="leading" secondItem="ca2-F7-Guv" secondAttribute="trailing" constant="5" id="tEH-af-D82"/>
+                    <constraint firstItem="ca2-F7-Guv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="v6d-EA-AHi"/>
+                    <constraint firstItem="feL-CA-4Jo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="zfg-g9-HYK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDate" destination="feL-CA-4Jo" id="Jx7-o7-H8y"/>
+                <outlet property="lblDiscription" destination="Fa8-Fe-kRW" id="Xd2-nx-Ym6"/>
+                <outlet property="lblLogId" destination="y8P-gx-PGl" id="Z4S-hf-Klu"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="57.254464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="division of values" width="6" height="282.5"/>
+        <image name="logs 2nd page box" width="768" height="145"/>
+    </resources>
+</document>

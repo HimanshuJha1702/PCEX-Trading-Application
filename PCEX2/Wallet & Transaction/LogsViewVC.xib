@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogsViewVC" customModule="PCEX2" customModuleProvider="target">
+            <connections>
+                <outlet property="tblView" destination="rIl-xi-2NH" id="l3b-f6-7wz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvL-mt-cQ7">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vn-kK-IBN">
+                            <rect key="frame" x="8" y="10" width="60" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="3Vq-S6-dx9"/>
+                                <constraint firstAttribute="height" constant="40" id="IjE-ga-uvo"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="-5" minY="5" maxX="30" maxY="5"/>
+                            <state key="normal" image="back button"/>
+                            <connections>
+                                <action selector="btnBackAction:" destination="-1" eventType="touchUpInside" id="ylZ-Yz-ges"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line of net position" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-j2-hh6">
+                            <rect key="frame" x="5" y="58" width="404" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="mUh-J8-Xdo"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxl-VJ-bel">
+                            <rect key="frame" x="185" y="19" width="44" height="24"/>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                            <color key="textColor" red="0.066666666669999999" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Mvw-j2-hh6" firstAttribute="leading" secondItem="rvL-mt-cQ7" secondAttribute="leading" constant="5" id="1NG-Bv-21h"/>
+                        <constraint firstItem="Qxl-VJ-bel" firstAttribute="centerY" secondItem="rvL-mt-cQ7" secondAttribute="centerY" constant="1" id="8qW-8y-iJ9"/>
+                        <constraint firstItem="Qxl-VJ-bel" firstAttribute="centerX" secondItem="rvL-mt-cQ7" secondAttribute="centerX" id="94I-83-v1L"/>
+                        <constraint firstItem="Mvw-j2-hh6" firstAttribute="top" secondItem="9Vn-kK-IBN" secondAttribute="bottom" constant="8" id="CRf-a1-NKJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Mvw-j2-hh6" secondAttribute="trailing" constant="5" id="NKF-FE-Jdn"/>
+                        <constraint firstAttribute="height" constant="60" id="VdO-tU-Rt0"/>
+                        <constraint firstItem="9Vn-kK-IBN" firstAttribute="leading" secondItem="rvL-mt-cQ7" secondAttribute="leading" constant="8" id="WFv-3M-vxz"/>
+                        <constraint firstItem="9Vn-kK-IBN" firstAttribute="top" secondItem="rvL-mt-cQ7" secondAttribute="top" constant="10" id="cYB-hf-Sbg"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rIl-xi-2NH">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IVL-St-OIe"/>
+                        <outlet property="delegate" destination="-1" id="ih0-1X-VQR"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rvL-mt-cQ7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MDg-yS-eBj"/>
+                <constraint firstAttribute="trailing" secondItem="rvL-mt-cQ7" secondAttribute="trailing" id="Th2-sy-dRK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rIl-xi-2NH" secondAttribute="bottom" id="WL1-Jc-qGn"/>
+                <constraint firstItem="rIl-xi-2NH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aKs-9S-LX3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rIl-xi-2NH" secondAttribute="trailing" id="ins-qM-ryd"/>
+                <constraint firstItem="rvL-mt-cQ7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ki6-wx-hZl"/>
+                <constraint firstItem="rIl-xi-2NH" firstAttribute="top" secondItem="rvL-mt-cQ7" secondAttribute="bottom" id="zUX-Ux-DSn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back button" width="46.5" height="61.5"/>
+        <image name="line of net position" width="729.5" height="4"/>
+    </resources>
+</document>

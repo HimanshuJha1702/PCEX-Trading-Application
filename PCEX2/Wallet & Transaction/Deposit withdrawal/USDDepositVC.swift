@@ -95,20 +95,13 @@ class USDDepositVC: UIViewController,UITextFieldDelegate,IQDropDownTextFieldData
             lblWalletAddress.text = addressString
             
             
-            scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
+            scrollView = UIScrollView(frame: CGRect(x: 0, y: 20, width: view.frame.size.width, height: view.frame.size.height))
             scrollView.backgroundColor = .white
             view.addSubview(scrollView)
             scrollView.addSubview(viewCrypto)
             viewCrypto.frame = CGRect(
                 x: 0, y: 20, width: width, height: viewCrypto.frame.size.height)
-//            if(height > 730)
-//            {
-//                scrollView.updateContentView()
-//            }
-//            else
-//            {
-                scrollView.contentSize = CGSize(width: width, height: 1100)
-            //}
+                scrollView.contentSize = CGSize(width: width, height: 1000)
         }
         
     }

@@ -233,11 +233,19 @@ class WalletVC_New: UIViewController,UITableViewDataSource, UITableViewDelegate 
         else
         {
             
-            let usdVC = USD_BaseDepositWithDraw(nibName: "USD_BaseDepositWithDraw", bundle: nil)
-            usdVC.isCrypto = true
-            usdVC.currenyName = coin
-            usdVC.imglogoPath = (dict["path"] as! String)
-            self.navigationController?.pushViewController(usdVC, animated: true)
+            Api.request(endpoint: .getWalletAddress(coin: coin)) { (JSON) in
+                
+                if (JSON["status"] == 200)
+                {
+                    let usdVC = USD_BaseDepositWithDraw(nibName: "USD_BaseDepositWithDraw", bundle: nil)
+                    usdVC.isCrypto = true
+                    usdVC.addressString = JSON["address"].stringValue
+                    usdVC.currenyName = coin
+                    usdVC.imglogoPath = (dict["path"] as! String)
+                    self.navigationController?.pushViewController(usdVC, animated: true)
+                }
+                
+            }
         }
         
     }

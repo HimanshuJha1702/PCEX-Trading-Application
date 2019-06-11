@@ -540,8 +540,8 @@ extension MarketWatchVC {
         option.menuItemBackgroundColorNormal = .clear //UIColor(red:0.388, green:0.424, blue:0.467, alpha:1)
         option.menuItemBackgroundColorSelected = UIColor(patternImage: UIImage(named: "purchase blue button.jpg")!)//UIColor(red:0.227, green:0.678, blue:0.851, alpha:1)
         option.menuTitleMargin = 12
-        option.menuTitleColorNormal = (UIColor(hexString: VioletPCEX_CUSTOM))
-        option.menuTitleColorSelected = .black
+        option.menuTitleColorNormal = .lightGray
+        option.menuTitleColorSelected = (UIColor(hexString: VioletPCEX_CUSTOM))
         option.menuIndicatorHeight = 3
         option.menuIndicatorColor = (UIColor(hexString: VioletPCEX_CUSTOM))
         return option

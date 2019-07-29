@@ -2,7 +2,7 @@
 //  CSMWalkthroughVC.swift
 //  PCEX2
 //
-//  Created by RAHUL BANSAL on 4/3/19.
+//  Created by CHHAGAN SINGH on 4/3/19.
 //  Copyright © 2019 Panaesha Capital pvt. ltd. All rights reserved.
 //
 
@@ -32,21 +32,16 @@ class CSMWalkthroughVC: UIViewController, UIPageViewControllerDataSource, UIPage
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.pageController.dataSource = self
         self.pageController.delegate = self
-        
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func viewDidLoad() {
-        pageController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
+    override func viewDidLoad() {        pageController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
         self.addChildViewControllerWithView(pageController)
         pageControl.numberOfPages = viewControllers.count
         self.view.bringSubviewToFront(pageControl)
         super.viewDidLoad()
     }
-    
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         if let index = self.index(of: viewController) {
             if index == 0 {

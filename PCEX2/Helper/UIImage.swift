@@ -2,7 +2,7 @@
 //  UIImage.swift
 //  PCEX2
 //
-//  Created by RAHUL BANSAL on 4/3/19.
+//  Created by CHHAGAN SINGH on 4/3/19.
 //  Copyright © 2019 Panaesha Capital pvt. ltd. All rights reserved.
 //
 

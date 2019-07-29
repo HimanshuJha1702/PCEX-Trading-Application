@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/rahulbansal/Desktop/chhagan/PCEX2/build/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules"
+    'name': "/Users/godofatheist/Downloads/pancap/PCEX/build/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/rahulbansal/Desktop/chhagan/PCEX2/build/Pods.build/Debug-iphonesimulator/SwiftyJSON.build/unextended-module.modulemap",
+      'external-contents': "/Users/godofatheist/Downloads/pancap/PCEX/build/Pods.build/Debug-iphonesimulator/SwiftyJSON.build/unextended-module.modulemap",
     }]
   }]
 }

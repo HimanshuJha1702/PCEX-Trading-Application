@@ -14,6 +14,8 @@ import Starscream
 import NotificationBannerSwift
 import Alamofire
 import SwiftyJSON
+import Messages
+import LocalAuthentication
 
 struct AppDelegateGlobal {
     
@@ -39,22 +41,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        //live
         defaults.set("api2", forKey: "server")
         AppDelegateGlobal.SocketUrl = "https://pcex.io:4444/socket.io/"
-
         
+//        if AppDataManager.shared.logged {
+         
+        let date = Int(Date().timeIntervalSince1970)
+        let lastActiveDateTimeStamp = UserDefaults.standard.integer(forKey: "last_active_time")
+        if (date - lastActiveDateTimeStamp > 10 &&  APP_Defaults.bool(forKey: "login"))
+        {
+            self.startLoginController()
+        }
+       
         defaults.synchronize()
         return true
     }
     
+    public func startLoginController() {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "RegisterNav") as! UINavigationController
+        self.window?.rootViewController = vc
+        
+//        let destViewController : TabViewController = storyBoard!.instantiateViewController(withIdentifier: "landingPage") as! TabViewController
+//        self.navigationController!.pushViewController(destViewController, animated: true)
+        
+//        let storyBoard = UIStoryboard(name: "First", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "RegisterNav") as! UINavigationController
+//        self.window?.rootViewController = vc
+    }
 
     
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        let dateTimeStamp = Date().timeIntervalSince1970
+        UserDefaults.standard.set(dateTimeStamp, forKey: "last_active_time")
+        UserDefaults.standard.synchronize()
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        let date = Int(Date().timeIntervalSince1970)
+        let lastActiveDateTimeStamp = UserDefaults.standard.integer(forKey: "last_active_time")
+        if date - lastActiveDateTimeStamp > 10  {
+            if (date - lastActiveDateTimeStamp > 10 &&  APP_Defaults.bool(forKey: "login"))
+            {
+                self.startLoginController()
+            } else {
+                let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                let redViewController = mainStoryBoard.instantiateViewController(withIdentifier: "respectiveIdentifier")
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.window?.rootViewController = redViewController
+            }
+        }
+        
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -71,4 +108,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
 }
+
+
 

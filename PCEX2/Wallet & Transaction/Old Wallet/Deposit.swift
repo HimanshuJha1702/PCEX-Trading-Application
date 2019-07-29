@@ -2,7 +2,7 @@
 //  Deposit.swift
 //  PCEX
 //
-//  Created by RAHUL BANSAL on 3/24/19.
+//  Created by CHHAGAN SINGH on 3/24/19.
 //  Copyright © 2019 Chhagan SIngh. All rights reserved.
 //
 

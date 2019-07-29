@@ -2,7 +2,7 @@
 //  WalkThroughVC.swift
 //  PCEX2
 //
-//  Created by RAHUL BANSAL on 4/3/19.
+//  Created by CHHAGAN SINGH on 4/3/19.
 //  Copyright © 2019 Panaesha Capital pvt. ltd. All rights reserved.
 //
 
@@ -18,17 +18,16 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
      @IBOutlet weak var flashLogo: UIImageView!
     
     let walkthroughs = [
-        CSMWalkthroughModel(title: "", subtitle: "", icon: "01.jpg"),
-        CSMWalkthroughModel(title: "", subtitle: "", icon: "02.jpg"),
-        CSMWalkthroughModel(title: "", subtitle: "", icon: "03.jpg"),
-        CSMWalkthroughModel(title: "", subtitle: "", icon: "04.jpg"),
+        CSMWalkthroughModel(title: "", subtitle: "", icon: "slider1.jpg"),
+        CSMWalkthroughModel(title: "", subtitle: "", icon: "slider2.jpg"),
+        CSMWalkthroughModel(title: "", subtitle: "", icon: "slider3.jpg"),
+        CSMWalkthroughModel(title: "", subtitle: "", icon: "slider4.jpg"),
         ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        flashLogo.setGifImage(UIImage(gifName: "flash.gif"), manager: .defaultManager, loopCount: 1)
-        flashLogo.startAnimating()
+//
+//        flashLogo.setGifImage(UIImage(gifName: "flash.gif"), manager: .defaultManager, loopCount: 1)
+//        flashLogo.startAnimating()
     }
     
 
@@ -36,8 +35,8 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
-            self.flashLogo.stopAnimatingGif()
-            self.flashLogo.isHidden = true
+//            self.flashLogo.stopAnimatingGif()
+//            self.flashLogo.isHidden = true
             
             
             let width = UIScreen.main.bounds.width
@@ -52,6 +51,7 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
             self.view.superview!.addSubview(button)
             
             
+
             AppDelegateGlobal.SocketUrl = "https://pcex.io:4444/socket.io/"
             
             if(APP_Defaults.bool(forKey: "login"))
@@ -104,6 +104,29 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = redViewController
     }
+    
+   
+    func validLogin()
+    {
+//        let username = APP_Defaults.value(forKey: "userName") as! String
+//        let password = APP_Defaults.value(forKey: "password") as! String
+        
+        let destViewController : TabViewController = self.storyboard!.instantiateViewController(withIdentifier: "landingPage") as! TabViewController
+        self.navigationController!.pushViewController(destViewController, animated: true)
+        
+//    AppDataManager.shared.token = "\(username) \(password)"
+//        let viewController = PasscodeViewController.passcode.changeCode { (success) in
+//            if success {
+//
+//
+//            } else {
+//                AppDataManager.shared.passCode = nil
+//            }
+//        }
+//        self.present(viewController!, animated: true, completion: nil)
+}
+    
+    
     /*
      APP STARTING METHODS
  */
@@ -161,9 +184,7 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
                 
                 APP_Defaults .synchronize()
                 
-                let destViewController : TabViewController = self.storyboard!.instantiateViewController(withIdentifier: "landingPage") as! TabViewController
-                self.navigationController!.pushViewController(destViewController, animated: true)
-                
+                self.validLogin()
             }
             else  {
                 return

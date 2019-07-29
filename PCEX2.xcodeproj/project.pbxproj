@@ -3,11 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5C93AFD9FAF811CFA961B84B /* Pods_PCEX2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE835A2F184FF692E0F6DAC2 /* Pods_PCEX2.framework */; };
+		7F09D69122BBF14B00F3CF37 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F09D69022BBF14B00F3CF37 /* LocalAuthentication.framework */; };
+		7F5BA41E22BAA8F300FF3A64 /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA41D22BAA8F300FF3A64 /* AppDataManager.swift */; };
+		7F5BA42722BAAB8B00FF3A64 /* PasscodeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA42022BAAB8100FF3A64 /* PasscodeConfig.swift */; };
+		7F5BA42822BAAB8B00FF3A64 /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA42122BAAB8300FF3A64 /* PasscodeViewController.swift */; };
+		7F5BA42922BAAB8B00FF3A64 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA42222BAAB8400FF3A64 /* NumberButton.swift */; };
+		7F5BA42A22BAAB8B00FF3A64 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5BA42322BAAB8600FF3A64 /* First.storyboard */; };
+		7F5BA42B22BAAB8B00FF3A64 /* Passcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA42522BAAB8900FF3A64 /* Passcode.swift */; };
+		7F5BA42C22BAAB8B00FF3A64 /* PasscodeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA42622BAAB8B00FF3A64 /* PasscodeCharacter.swift */; };
+		7FA4C0C522BE0C820045FF8B /* FirstVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4C0C422BE0C820045FF8B /* FirstVCViewController.swift */; };
+		A415476322E2619B008E032A /* CSMClassicWalkthroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A415476222E2619B008E032A /* CSMClassicWalkthroughVC.swift */; };
+		A47597D322EED707001C28BA /* SwitchSubBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47597D222EED707001C28BA /* SwitchSubBroker.swift */; };
+		A4761BB422EE396B003A6CD6 /* SubBrokerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4761BB322EE396B003A6CD6 /* SubBrokerDetails.swift */; };
 		E3111335229F091100043134 /* CurrencyNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3111333229F091100043134 /* CurrencyNameCell.swift */; };
 		E3111336229F091100043134 /* CurrencyNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3111334229F091100043134 /* CurrencyNameCell.xib */; };
 		E31756022256B7AC00ED992A /* CSMTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31756012256B7AC00ED992A /* CSMTabBarControllerViewController.swift */; };
@@ -22,7 +34,6 @@
 		E3520B592253E75E00A870DC /* CSMWalkthroughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3520B582253E75E00A870DC /* CSMWalkthroughModel.swift */; };
 		E3520B5C2253E7B900A870DC /* WalkThroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3520B5B2253E7B900A870DC /* WalkThroughVC.swift */; };
 		E3520B5E2253E7D600A870DC /* CSMWalkthroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3520B5D2253E7D600A870DC /* CSMWalkthroughVC.swift */; };
-		E3520B602253E83D00A870DC /* CSMClassicWalkthroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3520B5F2253E83D00A870DC /* CSMClassicWalkthroughVC.swift */; };
 		E3520B662253EF6A00A870DC /* CSMWalkthroughVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3520B652253EF6A00A870DC /* CSMWalkthroughVC.xib */; };
 		E3520B682253EFB600A870DC /* CSMClassicWalkthroughVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3520B672253EFB600A870DC /* CSMClassicWalkthroughVC.xib */; };
 		E3520B6A225401CD00A870DC /* UiView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3520B69225401CD00A870DC /* UiView+Extensions.swift */; };
@@ -117,6 +128,19 @@
 /* Begin PBXFileReference section */
 		0B601A0A5CD73DA5AAACFAE3 /* Pods-PCEX2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCEX2.debug.xcconfig"; path = "Target Support Files/Pods-PCEX2/Pods-PCEX2.debug.xcconfig"; sourceTree = "<group>"; };
 		12B66564333B4584647AD13A /* Pods-PCEX2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCEX2.release.xcconfig"; path = "Target Support Files/Pods-PCEX2/Pods-PCEX2.release.xcconfig"; sourceTree = "<group>"; };
+		7F09D69022BBF14B00F3CF37 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		7F5BA41D22BAA8F300FF3A64 /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
+		7F5BA42022BAAB8100FF3A64 /* PasscodeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeConfig.swift; sourceTree = "<group>"; };
+		7F5BA42122BAAB8300FF3A64 /* PasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		7F5BA42222BAAB8400FF3A64 /* NumberButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		7F5BA42322BAAB8600FF3A64 /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		7F5BA42422BAAB8800FF3A64 /* Passcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Passcode.h; sourceTree = "<group>"; };
+		7F5BA42522BAAB8900FF3A64 /* Passcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Passcode.swift; sourceTree = "<group>"; };
+		7F5BA42622BAAB8B00FF3A64 /* PasscodeCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeCharacter.swift; sourceTree = "<group>"; };
+		7FA4C0C422BE0C820045FF8B /* FirstVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVCViewController.swift; sourceTree = "<group>"; };
+		A415476222E2619B008E032A /* CSMClassicWalkthroughVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMClassicWalkthroughVC.swift; sourceTree = "<group>"; };
+		A47597D222EED707001C28BA /* SwitchSubBroker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSubBroker.swift; sourceTree = "<group>"; };
+		A4761BB322EE396B003A6CD6 /* SubBrokerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubBrokerDetails.swift; sourceTree = "<group>"; };
 		E3111333229F091100043134 /* CurrencyNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyNameCell.swift; sourceTree = "<group>"; };
 		E3111334229F091100043134 /* CurrencyNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyNameCell.xib; sourceTree = "<group>"; };
 		E31756012256B7AC00ED992A /* CSMTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMTabBarControllerViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +157,6 @@
 		E3520B582253E75E00A870DC /* CSMWalkthroughModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMWalkthroughModel.swift; sourceTree = "<group>"; };
 		E3520B5B2253E7B900A870DC /* WalkThroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC.swift; sourceTree = "<group>"; };
 		E3520B5D2253E7D600A870DC /* CSMWalkthroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMWalkthroughVC.swift; sourceTree = "<group>"; };
-		E3520B5F2253E83D00A870DC /* CSMClassicWalkthroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMClassicWalkthroughVC.swift; sourceTree = "<group>"; };
 		E3520B652253EF6A00A870DC /* CSMWalkthroughVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSMWalkthroughVC.xib; sourceTree = "<group>"; };
 		E3520B672253EFB600A870DC /* CSMClassicWalkthroughVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSMClassicWalkthroughVC.xib; sourceTree = "<group>"; };
 		E3520B69225401CD00A870DC /* UiView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Extensions.swift"; sourceTree = "<group>"; };
@@ -231,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F09D69122BBF14B00F3CF37 /* LocalAuthentication.framework in Frameworks */,
 				E3EA9B1022A16780004BA601 /* WebKit.framework in Frameworks */,
 				5C93AFD9FAF811CFA961B84B /* Pods_PCEX2.framework in Frameworks */,
 			);
@@ -248,6 +272,36 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7F5BA41F22BAAB4C00FF3A64 /* PassCode */ = {
+			isa = PBXGroup;
+			children = (
+				7F5BA42322BAAB8600FF3A64 /* First.storyboard */,
+				7F5BA42222BAAB8400FF3A64 /* NumberButton.swift */,
+				7F5BA42422BAAB8800FF3A64 /* Passcode.h */,
+				7F5BA42522BAAB8900FF3A64 /* Passcode.swift */,
+				7F5BA42622BAAB8B00FF3A64 /* PasscodeCharacter.swift */,
+				7F5BA42022BAAB8100FF3A64 /* PasscodeConfig.swift */,
+				7F5BA42122BAAB8300FF3A64 /* PasscodeViewController.swift */,
+			);
+			path = PassCode;
+			sourceTree = "<group>";
+		};
+		A421C19122EDAF520093CCA4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A4761BB222EE3943003A6CD6 /* SubBroker */ = {
+			isa = PBXGroup;
+			children = (
+				A4761BB322EE396B003A6CD6 /* SubBrokerDetails.swift */,
+				A47597D222EED707001C28BA /* SwitchSubBroker.swift */,
+			);
+			path = SubBroker;
+			sourceTree = "<group>";
+		};
 		E3111337229F091D00043134 /* DetailsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +315,7 @@
 		E323EC992253D5CC000FE64D = {
 			isa = PBXGroup;
 			children = (
+				A421C19122EDAF520093CCA4 /* New Group */,
 				E323ECA42253D5CC000FE64D /* PCEX2 */,
 				E323ECA32253D5CC000FE64D /* Products */,
 				E3520B4D2253DB9000A870DC /* Frameworks */,
@@ -284,6 +339,7 @@
 				E3520B572253E73800A870DC /* Models */,
 				E3520B502253E6B400A870DC /* Helper */,
 				E323ECA52253D5CC000FE64D /* AppDelegate.swift */,
+				7FA4C0C422BE0C820045FF8B /* FirstVCViewController.swift */,
 				E31756012256B7AC00ED992A /* CSMTabBarControllerViewController.swift */,
 				E3520B94225407D900A870DC /* SubMarkets */,
 				E3520B9F2254098400A870DC /* Orders */,
@@ -302,6 +358,7 @@
 		E3520B4D2253DB9000A870DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F09D69022BBF14B00F3CF37 /* LocalAuthentication.framework */,
 				E3EA9B0F22A16780004BA601 /* WebKit.framework */,
 				FE835A2F184FF692E0F6DAC2 /* Pods_PCEX2.framework */,
 			);
@@ -311,6 +368,7 @@
 		E3520B502253E6B400A870DC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7F5BA41F22BAAB4C00FF3A64 /* PassCode */,
 				E3520B512253E6D200A870DC /* UIImage.swift */,
 				E3520B552253E6F500A870DC /* UIViewController.swift */,
 				E3520B69225401CD00A870DC /* UiView+Extensions.swift */,
@@ -320,6 +378,7 @@
 				E3520B742254029D00A870DC /* LogoAnimationView.swift */,
 				E3520B732254029D00A870DC /* UIView+Constraints.swift */,
 				E3520B752254029D00A870DC /* validators.swift */,
+				7F5BA41D22BAA8F300FF3A64 /* AppDataManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -352,7 +411,7 @@
 				E3911E7E2299D41C00D78F1D /* 03.jpg */,
 				E3911E7F2299D41C00D78F1D /* 04.jpg */,
 				E3520B5B2253E7B900A870DC /* WalkThroughVC.swift */,
-				E3520B5F2253E83D00A870DC /* CSMClassicWalkthroughVC.swift */,
+				A415476222E2619B008E032A /* CSMClassicWalkthroughVC.swift */,
 				E3520B5D2253E7D600A870DC /* CSMWalkthroughVC.swift */,
 				E3520B652253EF6A00A870DC /* CSMWalkthroughVC.xib */,
 				E3520B672253EFB600A870DC /* CSMClassicWalkthroughVC.xib */,
@@ -415,6 +474,7 @@
 		E3520BB522540A7B00A870DC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A4761BB222EE3943003A6CD6 /* SubBroker */,
 				E3BD64A2229DFD98008F3F60 /* ChangePassword */,
 				E362375B229DEAFD00402587 /* T&C */,
 				E3520BB622540A7B00A870DC /* Login & Regsitration */,
@@ -632,6 +692,7 @@
 				E370618D22949374001019D1 /* LogsCell.xib in Resources */,
 				E3D3194C227A8C2F0020B747 /* flash.gif in Resources */,
 				E3BD64A6229DFDBF008F3F60 /* PasswrdChange.xib in Resources */,
+				7F5BA42A22BAAB8B00FF3A64 /* First.storyboard in Resources */,
 				E3520B85225405B700A870DC /* Directions.geojson in Resources */,
 				E3911E822299D41C00D78F1D /* 03.jpg in Resources */,
 				E3911E832299D41C00D78F1D /* 04.jpg in Resources */,
@@ -649,46 +710,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PCEX2/Pods-PCEX2-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
-				"${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
-				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/VBRRollingPit/VBRRollingPit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PCEX2/Pods-PCEX2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQDropDownTextField.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VBRRollingPit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PCEX2/Pods-PCEX2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -730,8 +756,11 @@
 				E3520BA72254098400A870DC /* OrdersCell.swift in Sources */,
 				E3D3193D2273E3630020B747 /* SetPasswordVC.swift in Sources */,
 				E31756022256B7AC00ED992A /* CSMTabBarControllerViewController.swift in Sources */,
+				A4761BB422EE396B003A6CD6 /* SubBrokerDetails.swift in Sources */,
+				7F5BA41E22BAA8F300FF3A64 /* AppDataManager.swift in Sources */,
 				E3BD64A5229DFDBF008F3F60 /* PasswrdChange.swift in Sources */,
 				E323ECAA2253D5CC000FE64D /* Orders_TradesVC.swift in Sources */,
+				7F5BA42722BAAB8B00FF3A64 /* PasscodeConfig.swift in Sources */,
 				E3520B87225405B700A870DC /* Connectivity.swift in Sources */,
 				E3D31943227577020020B747 /* ThankYouVC.swift in Sources */,
 				E3520B522253E6D200A870DC /* UIImage.swift in Sources */,
@@ -744,6 +773,7 @@
 				E370618822949160001019D1 /* LogsViewVC.swift in Sources */,
 				E39A29A122706C98006D66AF /* TabViewController.swift in Sources */,
 				E3D31956227B77C00020B747 /* BankDetailsVC.swift in Sources */,
+				7F5BA42822BAAB8B00FF3A64 /* PasscodeViewController.swift in Sources */,
 				E3D3194F227B65170020B747 /* KYCVC.swift in Sources */,
 				E370619A22972F4F001019D1 /* USD_BaseDepositWithDraw.swift in Sources */,
 				E3520B92225406DF00A870DC /* Api.swift in Sources */,
@@ -751,12 +781,15 @@
 				E3520B8C225405B700A870DC /* UserDetailsData.swift in Sources */,
 				E37A8CEF22A6ABCC00274E45 /* walletCell_New.swift in Sources */,
 				E3520B8A225405B700A870DC /* Currency.swift in Sources */,
+				7F5BA42922BAAB8B00FF3A64 /* NumberButton.swift in Sources */,
 				E37A8CEB22A6AA9200274E45 /* WalletVC_New.swift in Sources */,
 				E39A29A422712D71006D66AF /* DetailPlaceOrderVC.swift in Sources */,
 				E3520BC522540BED00A870DC /* NetPositionVC.swift in Sources */,
 				E3520BA42254098400A870DC /* TradesVC.swift in Sources */,
 				E3520B9A2254092700A870DC /* MarketBTC.swift in Sources */,
 				E3520B702254022B00A870DC /* UiTextField+Extensions.swift in Sources */,
+				7F5BA42C22BAAB8B00FF3A64 /* PasscodeCharacter.swift in Sources */,
+				A47597D322EED707001C28BA /* SwitchSubBroker.swift in Sources */,
 				E3520BB322540A6B00A870DC /* WithdrawalVC.swift in Sources */,
 				E323ECA62253D5CC000FE64D /* AppDelegate.swift in Sources */,
 				E3520B88225405B700A870DC /* RegisterData.swift in Sources */,
@@ -766,7 +799,6 @@
 				E3520BB022540A6B00A870DC /* TransactionCell.swift in Sources */,
 				E3520B6E2254020F00A870DC /* UiColor+Extensions.swift in Sources */,
 				E3520B9E2254092700A870DC /* ListerVC.swift in Sources */,
-				E3520B602253E83D00A870DC /* CSMClassicWalkthroughVC.swift in Sources */,
 				E3520B592253E75E00A870DC /* CSMWalkthroughModel.swift in Sources */,
 				E3520BC722540DE600A870DC /* ProfileVC.swift in Sources */,
 				E3520B772254029D00A870DC /* LogoAnimationView.swift in Sources */,
@@ -777,6 +809,7 @@
 				E3520BBD22540A7B00A870DC /* Login.swift in Sources */,
 				E3D3195E227BCF320020B747 /* MyAccount.swift in Sources */,
 				E323ECA82253D5CC000FE64D /* MarketWatchVC.swift in Sources */,
+				7F5BA42B22BAAB8B00FF3A64 /* Passcode.swift in Sources */,
 				E370618022947613001019D1 /* DepositWithDrawHistory.swift in Sources */,
 				E370618C22949374001019D1 /* LogsCell.swift in Sources */,
 				E3623756229DAB9D00402587 /* BankCell.swift in Sources */,
@@ -784,6 +817,7 @@
 				E3520BB222540A6B00A870DC /* Deposit.swift in Sources */,
 				E3520BA62254098400A870DC /* TradesCell.swift in Sources */,
 				E3520BA52254098400A870DC /* OrdersVC.swift in Sources */,
+				A415476322E2619B008E032A /* CSMClassicWalkthroughVC.swift in Sources */,
 				E3520B722254024D00A870DC /* UiApplication+Extensions.swift in Sources */,
 				E3520BA9225409F200A870DC /* WalletVC.swift in Sources */,
 				E3520BB422540A6B00A870DC /* WalletCell.swift in Sources */,
@@ -794,6 +828,7 @@
 				E370619022949FFD001019D1 /* FavMarketVC.swift in Sources */,
 				E3520B5C2253E7B900A870DC /* WalkThroughVC.swift in Sources */,
 				E3520BC922542C5A00A870DC /* DirectMarketDemo.swift in Sources */,
+				7FA4C0C522BE0C820045FF8B /* FirstVCViewController.swift in Sources */,
 				E3520B5E2253E7D600A870DC /* CSMWalkthroughVC.swift in Sources */,
 				E3520B762254029D00A870DC /* UIView+Constraints.swift in Sources */,
 			);
@@ -946,8 +981,8 @@
 			baseConfigurationReference = 0B601A0A5CD73DA5AAACFAE3 /* Pods-PCEX2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 34CWAM8N2B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -959,9 +994,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PC.PCEX2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.panpcex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = csm1pcex;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -972,8 +1007,8 @@
 			baseConfigurationReference = 12B66564333B4584647AD13A /* Pods-PCEX2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 34CWAM8N2B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -985,9 +1020,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PC.PCEX2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.panpcex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = csm1pcex;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

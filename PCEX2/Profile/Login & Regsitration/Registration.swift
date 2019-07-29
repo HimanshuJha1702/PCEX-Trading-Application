@@ -93,7 +93,6 @@ class Registration: UIViewController,IQDropDownTextFieldDelegate {
         }
         
         
-        
         txtRegisterAs.isOptionalDropDown = false
         txtRegisterAs.itemList = ["Client", "Master Franchise/ Sub Broker"]
 

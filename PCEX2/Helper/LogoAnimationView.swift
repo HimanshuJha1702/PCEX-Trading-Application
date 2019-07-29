@@ -10,7 +10,6 @@ import UIKit
 import SwiftyGif
 
 class LogoAnimationView: UIView {
-    
     let logoGifImageView = UIImageView(gifImage: UIImage(gifName: "flash.gif"), loopCount: 1)
     
     override init(frame: CGRect) {

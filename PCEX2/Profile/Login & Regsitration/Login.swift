@@ -77,19 +77,18 @@ class Login: UIViewController, UITextFieldDelegate {
     
     func validLogin()
     {
-      //  performSegue(withIdentifier: "pushToTrading", sender: nil)
-        
-        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        let redViewController = mainStoryBoard.instantiateViewController(withIdentifier: "landingPage")
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let navController = UINavigationController(rootViewController: redViewController)
-        
-        UIView.transition(with: self.view, duration: 0.3, options: .transitionFlipFromLeft, animations: {
-            
-            appDelegate.window?.rootViewController = navController
-            navController.navigationBar.isHidden = true
-            
-        }, completion: nil)
+
+                let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                let redViewController = mainStoryBoard.instantiateViewController(withIdentifier: "landingPage")
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let navController = UINavigationController(rootViewController: redViewController)
+                
+                UIView.transition(with: self.view, duration: 0.3, options: .transitionFlipFromLeft, animations: {
+                    
+                    appDelegate.window?.rootViewController = navController
+                    navController.navigationBar.isHidden = true
+        })
+
     }
 
     

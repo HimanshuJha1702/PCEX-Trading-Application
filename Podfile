@@ -19,5 +19,6 @@ target 'PCEX2' do
   pod 'IQDropDownTextField'
   pod 'KRProgressHUD'
   pod 'SwiftyGif'
+  pod 'BiometricAuthentication'
 
 end

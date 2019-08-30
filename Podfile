@@ -20,5 +20,5 @@ target 'PCEX2' do
   pod 'KRProgressHUD'
   pod 'SwiftyGif'
   pod 'BiometricAuthentication'
-
+  pod 'iOSDropDown'
 end

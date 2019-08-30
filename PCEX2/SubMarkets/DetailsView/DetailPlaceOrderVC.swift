@@ -378,13 +378,15 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    private func transactionHistory(){
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let destViewController : Orders_TradesVC = storyboard.instantiateViewController(withIdentifier: "pushToOT") as! Orders_TradesVC
+    destViewController.checkIsPipe = true
+    self.navigationController!.pushViewController(destViewController, animated: true)
+    }
+    
     @IBAction func btnAlertAction(_ sender: Any) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destViewController : Orders_TradesVC = storyboard.instantiateViewController(withIdentifier: "pushToOT") as! Orders_TradesVC
-        destViewController.checkIsPipe = true
-        self.navigationController!.pushViewController(destViewController, animated: true)
-        
+        self.transactionHistory()
     }
     
     @IBAction func btnBackAction(_ sender: Any) {
@@ -556,7 +558,6 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
         let alert = UIAlertController(title: "PCEX", message: msgTrade, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-            
             self.placeOrderOfTrade()
             
         }))
@@ -591,7 +592,7 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
                 let banner = StatusBarNotificationBanner(title: msg, style: .success)
                 banner.dismiss()
                 banner.show()
-                
+                self.transactionHistory()
                 
             }
             else

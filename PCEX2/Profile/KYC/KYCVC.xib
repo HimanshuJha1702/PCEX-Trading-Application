@@ -86,10 +86,10 @@
                     </variation>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVg-1j-cxT">
-                    <rect key="frame" x="40" y="126" width="82" height="20"/>
-                    <color key="backgroundColor" red="0.90588235289999997" green="0.94117647059999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="40" y="126" width="64" height="20"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="82" id="QnA-U0-pt6"/>
+                        <constraint firstAttribute="width" constant="64" id="QnA-U0-pt6"/>
                         <constraint firstAttribute="height" constant="20" id="nd2-6P-3mH"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16.5"/>
@@ -108,11 +108,11 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address proof" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5I-1V-YHw">
-                    <rect key="frame" x="40" y="182" width="126" height="21"/>
-                    <color key="backgroundColor" red="0.90588235289999997" green="0.94117647059999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="40" y="182" width="110" height="21"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="OG2-Q2-kfJ"/>
-                        <constraint firstAttribute="width" constant="126" id="xbG-p6-imb"/>
+                        <constraint firstAttribute="width" constant="110" id="xbG-p6-imb"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16.5"/>
                     <color key="textColor" red="0.066666666669999999" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -158,10 +158,10 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rf-oE-3wn">
-                    <rect key="frame" x="40" y="310" width="148" height="21"/>
-                    <color key="backgroundColor" red="0.90588235289999997" green="0.94117647059999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="40" y="310" width="128" height="21"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="148" id="16r-UC-LmB"/>
+                        <constraint firstAttribute="width" constant="128" id="16r-UC-LmB"/>
                         <constraint firstAttribute="height" constant="21" id="5Ic-or-dGA"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16.5"/>
@@ -180,11 +180,11 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Proof" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyH-af-hmZ">
-                    <rect key="frame" x="40" y="367.5" width="148" height="21"/>
+                    <rect key="frame" x="40" y="367.5" width="123" height="21"/>
                     <color key="backgroundColor" red="0.90588235289999997" green="0.94117647059999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="Grn-43-waQ"/>
-                        <constraint firstAttribute="width" constant="148" id="f8h-2B-QLW"/>
+                        <constraint firstAttribute="width" constant="123" id="f8h-2B-QLW"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16.5"/>
                     <color key="textColor" red="0.066666666669999999" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>

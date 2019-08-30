@@ -48,7 +48,7 @@ class BankDetailsVC: UIViewController,UITableViewDataSource, UITableViewDelegate
         
         tblBankDetails.register(BankCell.self, forCellReuseIdentifier: "bank")
         tblBankDetails.register(UINib(nibName: "BankCell", bundle: nil), forCellReuseIdentifier: "bank")
-        
+        viewAddBank.isHidden = true
         if(!alreadyAdded)
         {
             viewAddBank.isHidden = true

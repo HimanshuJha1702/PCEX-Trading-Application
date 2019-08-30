@@ -9,6 +9,14 @@
 import Foundation
 
 class CurrencyName {
+    static let var1: String = "FCC"
+    static let var2: String = "BTC"
+    static let var3: String = "ETH"
+    static let var4: String = "LTC"
+    static let var5: String = "DASH"
+    static let var6: String = "XMR"
+    static let var7: String = "BCH"
+    
     static let shared = CurrencyName()
     var currencyID = [
         1 : "USD / FCC",
@@ -42,7 +50,7 @@ class CurrencyName {
         35: "USD / BCH"
     ]
     
-    func currencyNameForID(id:Int) -> String {
+   public func currencyNameForID(id:Int) -> String {
         return self.currencyID[id] ?? "N/A"
     }
 }

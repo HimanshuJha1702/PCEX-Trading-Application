@@ -75,7 +75,7 @@ class CSMTabBarControllerViewController: UITabBarController {
         }
   
         
-        print("cureent index selected",self.selectedIndex)
+        print("current index selected",self.selectedIndex)
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {

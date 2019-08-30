@@ -37,12 +37,9 @@ struct CurrencyModel {
     var volatilePercentUp   : String?
     var volume              : String?
     
-    
-    
     func currency()-> String {
         return CurrencyName.shared.currencyNameForID(id:self.symbolId)
     }
-    
 //    func market() -> String {
 //        return CurrencyModel
 //    }

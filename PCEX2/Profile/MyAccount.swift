@@ -10,17 +10,35 @@ import UIKit
 
 class MyAccount: UIViewController {
 
+    @IBOutlet weak var lblSubBroker: UIButton!
     @IBOutlet weak var lblClientId: UILabel!
     @IBOutlet weak var lblUserName: UILabel!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        Api.request(endpoint: .switchParent) { (JSON) in
+            let resData = JSON["data"].dictionaryObject;
+            if (JSON["status"] == 200 && resData != nil)
+            {
+                //print(resData);
+                let currentParentDetails = resData!["currentParentDetails"] as? NSDictionary;
+                if((currentParentDetails as? NSNull) == nil && currentParentDetails != nil)
+                {
+                    self.lblSubBroker.setTitle(currentParentDetails!["userCode"] as? String, for: .normal)
+                }
+            }
+        }
 
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.isHidden = true
-        
-        lblUserName.text! = APP_Defaults.value(forKey: "userName") as! String
+        lblUserName.textColor = #colorLiteral(red: 0.06666666667, green: 0.2274509804, blue: 0.4980392157, alpha: 1)
+        lblClientId.textColor = #colorLiteral(red: 0.06666666667, green: 0.2274509804, blue: 0.4980392157, alpha: 1)
+        let text = APP_Defaults.value(forKey: "userName") as! String
+        lblUserName.text! = text
         lblClientId.text! = APP_Defaults.value(forKey: "userCode") as! String
         
+        //HelperFunctions.test();
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,9 +59,13 @@ class MyAccount: UIViewController {
         
     }
     
-    @IBAction func buttonWhichDoesNothing(_ sender: Any) {
+    @IBAction func subBrokerIDbtn(_ sender: Any) {
         
-        performSegue(withIdentifier: "sub_broker", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier : "SubBrokerDetails" )
+        let navController = UINavigationController (rootViewController: controller)
+        self.present(navController, animated: true, completion: nil)
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     
@@ -83,6 +105,12 @@ class MyAccount: UIViewController {
         
         UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         UserDefaults.standard.synchronize()
+        
+        
+        let defaults = UserDefaults.standard
+        defaults.set("api2", forKey: "server")
+        AppDelegateGlobal.SocketUrl = "https://pcex.io:4444/socket.io/"
+        defaults.synchronize()
         
        // print(Array(UserDefaults.standard.dictionaryRepresentation().keys).count)
         

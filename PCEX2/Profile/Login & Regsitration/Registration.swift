@@ -165,10 +165,14 @@ class Registration: UIViewController,IQDropDownTextFieldDelegate {
     
     @IBAction func btnAllreadyhaveAccount(_ sender: Any) {
     
+        
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func btnBackAction(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+
+        print("this should be printed")
+        self.dismiss(animated: false, completion: nil)
+//        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func regSubmitBtnAction(_ sender: Any) {
@@ -248,7 +252,7 @@ class Registration: UIViewController,IQDropDownTextFieldDelegate {
             role = 5
         }
         
-        let server = "api1"
+        let server = "api2"
             let defaults = UserDefaults.standard
             defaults.set(server, forKey: "server")
             defaults.synchronize()
@@ -292,7 +296,7 @@ class Registration: UIViewController,IQDropDownTextFieldDelegate {
             role = 5
         }
         
-        let server = "api1"
+        let server = "api2"
 
         APP_Defaults.set(server, forKey: "server")
         APP_Defaults.synchronize()

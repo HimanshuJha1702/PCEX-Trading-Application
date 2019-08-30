@@ -41,10 +41,10 @@
                                 <action selector="btnBackAction:" destination="-1" eventType="touchUpInside" id="ylZ-Yz-ges"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line of net position" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-j2-hh6">
-                            <rect key="frame" x="5" y="58" width="404" height="1"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="division of heading and content" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-j2-hh6">
+                            <rect key="frame" x="5" y="58" width="404" height="2"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="1" id="mUh-J8-Xdo"/>
+                                <constraint firstAttribute="height" constant="2" id="mUh-J8-Xdo"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxl-VJ-bel">
@@ -90,6 +90,6 @@
     </objects>
     <resources>
         <image name="back button" width="46.5" height="61.5"/>
-        <image name="line of net position" width="729.5" height="4"/>
+        <image name="division of heading and content" width="765" height="12"/>
     </resources>
 </document>

@@ -36,6 +36,7 @@ class ListerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     override func viewDidLoad() {
+        print("ListerVC");
         super.viewDidLoad()
         self.tradeListerTableViewOutlet.delegate = self
         self.tradeListerTableViewOutlet.dataSource = self
@@ -100,6 +101,7 @@ class ListerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print(currenciesListObj.count)
         return currenciesListObj.count
     }
     

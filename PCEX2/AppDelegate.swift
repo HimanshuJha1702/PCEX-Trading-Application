@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        print("AppDelegate Kame hame ,,,,,,,");
         // Override point for customization after application launch.
         
         IQKeyboardManager.shared.enable = true
@@ -44,29 +46,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        if AppDataManager.shared.logged {
          
-        let date = Int(Date().timeIntervalSince1970)
-        let lastActiveDateTimeStamp = UserDefaults.standard.integer(forKey: "last_active_time")
-        if (date - lastActiveDateTimeStamp > 10 &&  APP_Defaults.bool(forKey: "login"))
+//        let date = Int(Date().timeIntervalSince1970)
+//        print("Date Input : \(date)");
+//        let lastActiveDateTimeStamp = UserDefaults.standard.integer(forKey: "last_active_time")
+//        date - lastActiveDateTimeStamp > 10 &&
+        
+        if (APP_Defaults.bool(forKey: "login"))
         {
-            self.startLoginController()
+            self.goToPage(pageName:"RegisterNav")
+        }
+        else
+        {
+            self.goToPage(pageName:"WalkThroughNav")
         }
        
         defaults.synchronize()
+        
+        print("AppDelegate done..");
         return true
     }
     
-    public func startLoginController() {
-        
+    private func goToPage(pageName:String)
+    {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "RegisterNav") as! UINavigationController
+        let vc = storyBoard.instantiateViewController(withIdentifier: pageName) as! UINavigationController
         self.window?.rootViewController = vc
-        
-//        let destViewController : TabViewController = storyBoard!.instantiateViewController(withIdentifier: "landingPage") as! TabViewController
-//        self.navigationController!.pushViewController(destViewController, animated: true)
-        
-//        let storyBoard = UIStoryboard(name: "First", bundle: nil)
-//        let vc = storyBoard.instantiateViewController(withIdentifier: "RegisterNav") as! UINavigationController
-//        self.window?.rootViewController = vc
     }
 
     
@@ -78,19 +82,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidEnterBackground(_ application: UIApplication) {
         
-        let date = Int(Date().timeIntervalSince1970)
-        let lastActiveDateTimeStamp = UserDefaults.standard.integer(forKey: "last_active_time")
-        if date - lastActiveDateTimeStamp > 10  {
-            if (date - lastActiveDateTimeStamp > 10 &&  APP_Defaults.bool(forKey: "login"))
-            {
-                self.startLoginController()
-            } else {
-                let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-                let redViewController = mainStoryBoard.instantiateViewController(withIdentifier: "respectiveIdentifier")
-                let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                appDelegate.window?.rootViewController = redViewController
-            }
-        }
+        print("applicationDidEnterBackground");
+//        let date = Int(Date().timeIntervalSince1970)
+//        let lastActiveDateTimeStamp = UserDefaults.standard.integer(forKey: "last_active_time")
+//        if date - lastActiveDateTimeStamp > 10  {
+//            if (date - lastActiveDateTimeStamp > 10 &&  APP_Defaults.bool(forKey: "login"))
+//            {
+//                self.startLoginController()
+//            } else {
+//                let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+//                let redViewController = mainStoryBoard.instantiateViewController(withIdentifier: "respectiveIdentifier")
+//                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//                appDelegate.window?.rootViewController = redViewController
+//            }
+//        }
         
     }
     

@@ -12,7 +12,8 @@ class FirstVCViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print("FirstVCViewController");
          DispatchQueue.main.async {
             self.authenticationWithTouchID()
         }
@@ -67,6 +68,10 @@ class FirstVCViewController: UIViewController {
                 DispatchQueue.main.async {
                 self.loadOrders(pageNumber: 1)
                 self.loadPendingOrders(pageNumber: 1)
+                    
+                let destViewController : TabViewController = self.storyboard!.instantiateViewController(withIdentifier: "landingPage") as! TabViewController
+                self.navigationController!.pushViewController(destViewController, animated: true)
+                    
                 }
                 
                 

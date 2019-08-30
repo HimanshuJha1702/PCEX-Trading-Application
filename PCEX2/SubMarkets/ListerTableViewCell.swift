@@ -43,7 +43,9 @@ class ListerTableViewCell: UITableViewCell {
 //        }
         
         currNameLblOutlet.text = scrip.currency()
-        currNameLblOutlet.textColor = (UIColor(hexString: VioletPCEX_CUSTOM))
+        print(scrip.currency())
+        //currNameLblOutlet.textColor = (UIColor(hexString: VioletPCEX_CUSTOM))
+        
         
        let priceCurrent = Double(scrip.ltp!)
         

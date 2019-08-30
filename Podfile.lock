@@ -3,6 +3,7 @@ PODS:
   - AlamofireNetworkActivityIndicator (2.4.0):
     - Alamofire (~> 4.8)
   - BiometricAuthentication (3.0)
+  - iOSDropDown (0.3.4)
   - IQDropDownTextField (1.1.1)
   - IQKeyboardManagerSwift (6.4.0)
   - KeychainAccess (3.2.0)
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityIndicator
   - BiometricAuthentication
+  - iOSDropDown
   - IQDropDownTextField
   - IQKeyboardManagerSwift
   - KeychainAccess
@@ -41,10 +43,11 @@ DEPENDENCIES:
   - VBRRollingPit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireNetworkActivityIndicator
     - BiometricAuthentication
+    - iOSDropDown
     - IQDropDownTextField
     - IQKeyboardManagerSwift
     - KeychainAccess
@@ -64,6 +67,7 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
   BiometricAuthentication: e39b1a55040d679d5dbc4fa90d76e067c432de7f
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
   IQDropDownTextField: 3d2e5728a2b83ff5dbb14cb9b497a80005124cbe
   IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
   KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
@@ -79,6 +83,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   VBRRollingPit: 62a79cc663aeea6a196878b3a907056617f96b6a
 
-PODFILE CHECKSUM: 8c93e13d38ecf492710c6a678c8b38fa0e994c14
+PODFILE CHECKSUM: 8f75a225b941452683398a8e1738c9568357692a
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.8.0.beta.1

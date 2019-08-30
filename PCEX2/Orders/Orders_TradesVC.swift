@@ -177,7 +177,6 @@ class Orders_TradesVC: UIViewController,UITableViewDataSource, UITableViewDelega
          viewOrdersTrades.isHidden = true
         tableView.isHidden = false
         viewTblHeader.isHidden = false
-        
     }
     func getNetposition()
     {

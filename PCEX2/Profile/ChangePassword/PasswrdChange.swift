@@ -26,6 +26,9 @@ class PasswrdChange: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnCancel(_ sender: Any){
+    self.navigationController?.popViewController(animated: true)
+    }
     @IBAction func btnSubmit(_ sender: Any) {
         let res1 = txtNewPassword.text!.removeWhitespace()
         let res3 = txtOldPassword.text!.removeWhitespace()

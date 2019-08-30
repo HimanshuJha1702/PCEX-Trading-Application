@@ -70,8 +70,8 @@ class Login: UIViewController, UITextFieldDelegate {
     
     func clearLoginFieldValues()
     {
-        self.loginPassTxtFieldOutlet.text = ""
-        self.loginUserNameTxtFieldOutlet.text = ""
+        self.loginPassTxtFieldOutlet.text = "sahilsahil"
+        self.loginUserNameTxtFieldOutlet.text = "vishwa133"
     }
     // MARK: - Custom functions
     
@@ -139,7 +139,6 @@ class Login: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func btnCancel(_ sender: Any) {
-        
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -147,8 +146,12 @@ class Login: UIViewController, UITextFieldDelegate {
     @IBAction func loginRegBtnAction(_ sender: Any) {
           
         // Safe Push VC
-        let destViewController : Registration = self.storyboard!.instantiateViewController(withIdentifier: "loginToRegSegue") as! Registration
-        self.navigationController!.pushViewController(destViewController, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier : "loginToRegSegue" )
+        let navController = UINavigationController (rootViewController: controller)
+        self.present(navController, animated: true, completion: nil)
+//        let destViewController : Registration = self.storyboard!.instantiateViewController(withIdentifier: "loginToRegSegue") as! Registration
+//        self.navigationController!.pushViewController(destViewController, animated: true)
     }
     
     // MARK: - View Delegates
@@ -173,6 +176,7 @@ class Login: UIViewController, UITextFieldDelegate {
     // MARK: - API Calls https://pcex.io/api1/admin/login
     func loginWthParameters()
     {
+        print("1");
         KRProgressHUD.show(withMessage: "Loading...")
         
     
@@ -246,7 +250,7 @@ class Login: UIViewController, UITextFieldDelegate {
         
         
         
-//        Alamofire.request("https://pcex.io/api1/admin/login", method: .post, parameters: ["foo": "bar"],encoding: JSONEncoding.default, headers: nil).responseJSON {
+//        Alamofire.request("https://pcex.io//admin/login", method: .post, parameters: ["foo": "bar"],encoding: JSONEncoding.default, headers: nil).responseJSON {
 //            response in
 //            switch response.result {
 //            case .success:

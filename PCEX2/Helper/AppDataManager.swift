@@ -44,7 +44,9 @@ class AppDataManager {
     
     
     var logged:Bool {
+        
         get {
+            print("tootot")
             return APP_Defaults.bool(forKey: "login")
         }
     }

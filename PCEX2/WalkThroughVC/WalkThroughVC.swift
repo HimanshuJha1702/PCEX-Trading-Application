@@ -24,6 +24,7 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
         CSMWalkthroughModel(title: "", subtitle: "", icon: "slider4.jpg"),
         ]
     override func viewDidLoad() {
+        print("WalkThroughVC");
         super.viewDidLoad()
 //
 //        flashLogo.setGifImage(UIImage(gifName: "flash.gif"), manager: .defaultManager, loopCount: 1)
@@ -35,13 +36,13 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
-//            self.flashLogo.stopAnimatingGif()
-//            self.flashLogo.isHidden = true
+            self.flashLogo.stopAnimatingGif()
+            self.flashLogo.isHidden = true
             
             
             let width = UIScreen.main.bounds.width
             let height = UIScreen.main.bounds.height
-            
+
             let button:UIButton = UIButton(frame: CGRect(x: width - 80, y: height - 60, width: 100, height: 30))
             button.backgroundColor = .clear
             let image = UIImage(named: "button") as UIImage?
@@ -61,6 +62,7 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
             }
             else
             {
+        
 //                AppDelegateGlobal.SocketUrl = "https://pcex.io:3333/socket.io/"
                 let walkthroughVC = self.walkthroughVC()
                 walkthroughVC.delegate = self
@@ -134,13 +136,16 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
     {
         KRProgressHUD.show(withMessage: "Please Wait...")
         
+//        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+//            // Put your code which should be executed with a delay here
+//        })
         let username = APP_Defaults.value(forKey: "userName") as! String
         let password = APP_Defaults.value(forKey: "password") as! String
         
         
         Api.request(endpoint: .login(username: username, password: password), completionHandler: { (JSON) in
             
-            print("****************",JSON)
+            print("****************2222",JSON)
             
             let userDetails = JSON["data"].dictionaryObject
             
@@ -177,8 +182,9 @@ class WalkThroughVC: UIViewController,  CSMWalkthroughVCDelegate{
                 {
                     GlobalVariables.myFavs = arrayCheck as! [CurrencyModel]
                 }
-                
-                self.loadOrders(pageNumber: 1)
+                print("1");
+                self.loadOrders(pageNumber: 1);
+                print("2");
                 self.loadPendingOrders(pageNumber: 1)
                 
                 

@@ -92,7 +92,7 @@ class LogsViewVC: UIViewController,UITableViewDataSource, UITableViewDelegate,lo
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90.0;
+        return 80.0;
     }
     
     func convertDateFormatter(date: String) -> String {

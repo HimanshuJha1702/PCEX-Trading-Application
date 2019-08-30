@@ -33,20 +33,33 @@ class LogsCell: UITableViewCell {
         
         if(dict["message"].intValue == 1)
         {
-            lblDiscription.textColor = (UIColor(hexString: "#223e7d"))
+            lblDiscription.textColor = (UIColor(hexString: "#797b7b"))
         }
         else if(dict["message"].intValue == 2)
         {
-            lblDiscription.textColor = (UIColor(hexString: "#129F4b"))
+            lblDiscription.textColor = (UIColor(hexString: "#797b7b"))
         }
         else if(dict["message"].intValue == 3)
         {
-            lblDiscription.textColor = (UIColor(hexString: "#ed1F24"))
+            lblDiscription.textColor = (UIColor(hexString: "#797b7b"))
         }
         
         lblDate.text = dict["timeStamp"].stringValue
         lblDate.textColor = (UIColor(hexString: "#797b7b"))
-        
     }
     
 }
+
+// important message
+//if(dict["message"].intValue == 1)
+//{
+//    lblDiscription.textColor = (UIColor(hexString: "#223e7d"))
+//}
+//else if(dict["message"].intValue == 2)
+//{
+//    lblDiscription.textColor = (UIColor(hexString: "#129F4b"))
+//}
+//else if(dict["message"].intValue == 3)
+//{
+//    lblDiscription.textColor = (UIColor(hexString: "#ed1F24"))
+//}

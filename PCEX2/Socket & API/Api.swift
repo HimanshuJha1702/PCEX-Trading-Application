@@ -20,7 +20,7 @@ class Api {
     
     
     
-    static let testingServer = "http://localhost:3333"
+    static let testingServer = "http://localhost:4444"
     
     /**
      * An abstraction layer on top of the Gemini API to allow for simple handeling of API
@@ -55,9 +55,13 @@ class Api {
         case deleteBank(param:String)
         case getBanks
         case Balances()
+        case switchParent
+        case switchParent2
         //case getConditionalOrders()
         case TradeHistory(symbol: String, since: Int64, limit: Int?, includeBreaks: Bool?)
+        case createSwitchRequest(comments:String, parentCode:Any, reason:String)
         
+        //"userId":userId,"sessionId":sessionId,"fastSessionId":fastSessionId
         
         public var method: HTTPMethod {
             switch self {
@@ -109,6 +113,12 @@ class Api {
                 return .post
             case .TradeHistory:
                 return .get
+            case .switchParent:
+              return .post
+            case .switchParent2:
+                return .post
+            case .createSwitchRequest:
+                return .post
                 
             }
         }
@@ -163,12 +173,19 @@ class Api {
                 return "/v1/balances"
             case .TradeHistory(let symbol, _, _, _):
                 return "/v1/trades/\(symbol)"
+            case .switchParent:
+                return "/switchParent/getMyParentDetails"
+            case .switchParent2 :
+                return "/switchParent/cancelSwitchRequest"
+            case .createSwitchRequest:
+                return "/switchParent/createSwitchRequest"
             }
         }
         
         public var url: String {
             
-             let server = APP_Defaults.object(forKey: "server") as! String
+            guard let server = APP_Defaults.string(forKey: "server") else { return "api2" }
+            
             
              let urlconcat = "\(base)\(server)\(self.path)"
            // let urlconcat = "\(base)\("api2")\(self.path)"
@@ -176,7 +193,7 @@ class Api {
             // testing server
             //let urlconcat = "\(testingServer)\(self.path)"
             //let urlconcat = "\(base)\("api1")\(self.path)"
-            
+            print("URL xxxx ",urlconcat)
             return urlconcat
         }
         
@@ -250,6 +267,12 @@ class Api {
                 
             case .TradeHistory(_, let since, let limit, let breaks):
                 return ["include_breaks": String(breaks ?? false), "limit_trades": limit ?? 50, "timestamp": since * 1000]
+            case .switchParent:
+                return ["userId":userId,"sessionId":sessionId,"fastSessionId":fastSessionId]
+            case .switchParent2:
+                return ["userId":userId,"sessionId":sessionId,"fastSessionId":fastSessionId]
+            case .createSwitchRequest(let comments, let parentCode, let reason):
+                return ["userId":userId,"sessionId":sessionId,"fastSessionId":fastSessionId, "comments":comments, "parentCode":parentCode, "reason":reason]
             default:
                 return [:]
             }

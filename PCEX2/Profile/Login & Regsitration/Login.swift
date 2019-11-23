@@ -70,8 +70,8 @@ class Login: UIViewController, UITextFieldDelegate {
     
     func clearLoginFieldValues()
     {
-        self.loginPassTxtFieldOutlet.text = "sahilsahil"
-        self.loginUserNameTxtFieldOutlet.text = "vishwa133"
+        self.loginPassTxtFieldOutlet.text = "Sidcash@98180"
+        self.loginUserNameTxtFieldOutlet.text = "HimJha1439"
     }
     // MARK: - Custom functions
     

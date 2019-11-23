@@ -11,7 +11,6 @@ import UIKit
 
 class SubBrokerDetails : UIViewController {
     
-   
     
     @IBOutlet weak var nameOfObject: UITextField!
     

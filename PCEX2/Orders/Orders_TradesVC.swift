@@ -62,13 +62,12 @@ class Orders_TradesVC: UIViewController,UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-        navigationController?.navigationBar.isHidden = true
-        
-        self.getNetposition()
-        
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//
+//        navigationController?.navigationBar.isHidden = true
+//        self.getNetposition()
+//
+//    }
     
     @IBAction func btnBackAction(_ sender: Any) {
         
@@ -140,22 +139,22 @@ class Orders_TradesVC: UIViewController,UITableViewDataSource, UITableViewDelega
         let symbol = (dict["symbolName"].stringValue).lowercased()
         
         let imgPath = "https://www.pcex.io/assets/icons/\(symbol).png"
-//        if(symbol == "fcc")
-//        {
-//            imgPath = "https://www.pcex.io/assets/icons/fcc.png"
-//        }
-//        else
-//        {
-//          //  imgPath = "https://cryptoicons.org/api/icon/\(symbol)/20"
-//
-//
-//            let  symbol2 = (dict["symbolName"].stringValue).uppercased()
-//            imgPath = "https://www.coineal.com/res/img/coin/\(symbol2).png"
-//        }
         
         cell!.imgSymbol.sd_setImage(with: URL(string: imgPath), placeholderImage: UIImage(named: "placeholder.png"))
-        
         return cell!
+        
+        //        if(symbol == "fcc")
+        //        {
+        //            imgPath = "https://www.pcex.io/assets/icons/fcc.png"
+        //        }
+        //        else
+        //        {
+        //          //  imgPath = "https://cryptoicons.org/api/icon/\(symbol)/20"
+        //
+        //
+        //            let  symbol2 = (dict["symbolName"].stringValue).uppercased()
+        //            imgPath = "https://www.coineal.com/res/img/coin/\(symbol2).png"
+        //        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -163,20 +162,22 @@ class Orders_TradesVC: UIViewController,UITableViewDataSource, UITableViewDelega
     }
     @IBAction func btnOrdersAction(_ sender: Any) {
         
-    btnOrders.isSelected = true
+        btnOrders.isSelected = true
         btnNetposition.isSelected = false
         viewOrdersTrades.isHidden = false
         tableView.isHidden = true
         viewTblHeader.isHidden = true
+        
     }
     
     @IBAction func btnNetPositionsAction(_ sender: Any) {
         
         btnOrders.isSelected = false
         btnNetposition.isSelected = true
-         viewOrdersTrades.isHidden = true
+        viewOrdersTrades.isHidden = true
         tableView.isHidden = false
         viewTblHeader.isHidden = false
+        
     }
     func getNetposition()
     {
@@ -196,6 +197,39 @@ class Orders_TradesVC: UIViewController,UITableViewDataSource, UITableViewDelega
             
         }
         
+    }
+    
+    
+    func getPageMenuOption() -> PageMenuOption {
+        var option = PageMenuOption(frame: CGRect(
+            x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height - NavHeight))
+        option.menuItemWidth = view.frame.size.width / 2
+        option.menuItemBackgroundColorNormal = .white //UIColor(red:0.388, green:0.424, blue:0.467, alpha:1)
+        option.menuItemBackgroundColorSelected = .white //UIColor(red:0.067, green:0.227, blue:0.498, alpha:1)
+        option.menuTitleMargin = 12
+        option.menuTitleColorNormal = .lightGray
+        option.menuTitleColorSelected = UIColor(red:0.067, green:0.227, blue:0.498, alpha:1)
+        option.menuIndicatorHeight = 2
+        option.menuIndicatorColor = UIColor(red:0.067, green:0.227, blue:0.498, alpha:1)
+        return option
+    }
+    
+    func getViewControllers() -> [UIViewController] {
+        
+        // let markets = ["Orders"]
+        
+        var viewControllers = [UIViewController]()
+        //        for name in markets {
+        let animalViewController = OrdersVC.initFromStoryboard()
+        animalViewController.title = "Pending"
+        viewControllers.append(animalViewController)
+        // }
+        
+        let animalViewController2 = TradesVC.initFromStoryboard()
+        animalViewController2.title = "Trades"
+        viewControllers.append(animalViewController2)
+        
+        return viewControllers
     }
     
 }
@@ -228,42 +262,11 @@ extension Orders_TradesVC: PageMenuViewDelegate {
 
 // MARK: - Model
 
-extension Orders_TradesVC {
-    
-    func getPageMenuOption() -> PageMenuOption {
-        var option = PageMenuOption(frame: CGRect(
-            x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height - NavHeight))
-        option.menuItemWidth = view.frame.size.width / 2
-        option.menuItemBackgroundColorNormal = .white //UIColor(red:0.388, green:0.424, blue:0.467, alpha:1)
-        option.menuItemBackgroundColorSelected = .white //UIColor(red:0.067, green:0.227, blue:0.498, alpha:1)
-        option.menuTitleMargin = 12
-        option.menuTitleColorNormal = .lightGray
-        option.menuTitleColorSelected = UIColor(red:0.067, green:0.227, blue:0.498, alpha:1)
-        option.menuIndicatorHeight = 2
-        option.menuIndicatorColor = UIColor(red:0.067, green:0.227, blue:0.498, alpha:1)
-        return option
-    }
-    
-    func getViewControllers() -> [UIViewController] {
-        
-       // let markets = ["Orders"]
-        
-        var viewControllers = [UIViewController]()
-//        for name in markets {
-            let animalViewController = OrdersVC.initFromStoryboard()
-            animalViewController.title = "Pending"
-            viewControllers.append(animalViewController)
-       // }
-        
-        let animalViewController2 = TradesVC.initFromStoryboard()
-        animalViewController2.title = "Trades"
-        viewControllers.append(animalViewController2)
-        
-        return viewControllers
-    }
-    
-    
-}
+//extension Orders_TradesVC {
+//
+//
+//
+//}
 
 
 

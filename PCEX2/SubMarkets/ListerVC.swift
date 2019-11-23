@@ -101,7 +101,6 @@ class ListerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print(currenciesListObj.count)
         return currenciesListObj.count
     }
     
@@ -131,15 +130,16 @@ class ListerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let scrip = Array(currenciesListObj.values).sorted{$0.symbolId<$1.symbolId}[indexPath.row]
-        if scrip.symbolType == 2
-        {
-            return 80
-        }
-        else
-        {
-            return 60
-        }
+        return 60;
+//        let scrip = Array(currenciesListObj.values).sorted{$0.symbolId<$1.symbolId}[indexPath.row]
+//        if scrip.symbolType == 2
+//        {
+//            return 80
+//        }
+//        else
+//        {
+//            return 60
+//        }
     }
     
     
@@ -243,13 +243,13 @@ extension ListerVC : PcexServiceListenerProtocol,PcexServiceListenerProtocolDemo
         return self.hashValue
     }
 }
-extension ListerVC : UITextFieldDelegate {
-    func updateTradeHighlight(){
-        tradeListerTableViewOutlet.reloadData()
-    }
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        //updateTradeHighlight()
-        return true
-    }
-}
+//extension ListerVC : UITextFieldDelegate {
+//    func updateTradeHighlight(){
+//        tradeListerTableViewOutlet.reloadData()
+//    }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//        //updateTradeHighlight()
+//        return true
+//    }
+//}

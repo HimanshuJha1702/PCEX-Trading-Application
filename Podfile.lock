@@ -43,7 +43,7 @@ DEPENDENCIES:
   - VBRRollingPit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - AlamofireNetworkActivityIndicator
     - BiometricAuthentication
@@ -85,4 +85,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8f75a225b941452683398a8e1738c9568357692a
 
-COCOAPODS: 1.8.0.beta.1
+COCOAPODS: 1.8.4

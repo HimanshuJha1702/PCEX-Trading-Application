@@ -18,7 +18,10 @@
 		7F5BA42C22BAAB8B00FF3A64 /* PasscodeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA42622BAAB8B00FF3A64 /* PasscodeCharacter.swift */; };
 		7FA4C0C522BE0C820045FF8B /* FirstVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4C0C422BE0C820045FF8B /* FirstVCViewController.swift */; };
 		A415476322E2619B008E032A /* CSMClassicWalkthroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A415476222E2619B008E032A /* CSMClassicWalkthroughVC.swift */; };
+		A42EC8A22328880900DB8F2F /* OpenTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EC8A12328880900DB8F2F /* OpenTableCell.swift */; };
+		A42EC8A6232896A800DB8F2F /* AllOrders_HistoryVCNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EC8A5232896A800DB8F2F /* AllOrders_HistoryVCNew.swift */; };
 		A4539F4B22F4D52000DEA577 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4539F4A22F4D52000DEA577 /* HelperFunctions.swift */; };
+		A45FC994231B54E0000760A2 /* TradesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FC993231B54E0000760A2 /* TradesTableCell.swift */; };
 		A464B8CE230F232A006DA196 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A464B8CD230F232A006DA196 /* iOSDropDown.framework */; };
 		A468ECE122F41BBE00623B22 /* SubBrokerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468ECE022F41BBE00623B22 /* SubBrokerDetails.swift */; };
 		A48D9F7122FD0337009BEBA8 /* SubBrokerDetailsEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D9F7022FD0337009BEBA8 /* SubBrokerDetailsEdit.swift */; };
@@ -138,7 +141,10 @@
 		7F5BA42622BAAB8B00FF3A64 /* PasscodeCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeCharacter.swift; sourceTree = "<group>"; };
 		7FA4C0C422BE0C820045FF8B /* FirstVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVCViewController.swift; sourceTree = "<group>"; };
 		A415476222E2619B008E032A /* CSMClassicWalkthroughVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMClassicWalkthroughVC.swift; sourceTree = "<group>"; };
+		A42EC8A12328880900DB8F2F /* OpenTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTableCell.swift; sourceTree = "<group>"; };
+		A42EC8A5232896A800DB8F2F /* AllOrders_HistoryVCNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrders_HistoryVCNew.swift; sourceTree = "<group>"; };
 		A4539F4A22F4D52000DEA577 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		A45FC993231B54E0000760A2 /* TradesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradesTableCell.swift; sourceTree = "<group>"; };
 		A464B8CD230F232A006DA196 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A468ECE022F41BBE00623B22 /* SubBrokerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubBrokerDetails.swift; sourceTree = "<group>"; };
 		A48D9F7022FD0337009BEBA8 /* SubBrokerDetailsEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubBrokerDetailsEdit.swift; sourceTree = "<group>"; };
@@ -285,11 +291,14 @@
 			path = PassCode;
 			sourceTree = "<group>";
 		};
-		A421C19122EDAF520093CCA4 /* New Group */ = {
+		A45FC990231B52EC000760A2 /* Orders New */ = {
 			isa = PBXGroup;
 			children = (
+				A45FC993231B54E0000760A2 /* TradesTableCell.swift */,
+				A42EC8A12328880900DB8F2F /* OpenTableCell.swift */,
+				A42EC8A5232896A800DB8F2F /* AllOrders_HistoryVCNew.swift */,
 			);
-			path = "New Group";
+			path = "Orders New";
 			sourceTree = "<group>";
 		};
 		A4761BB222EE3943003A6CD6 /* SubBroker */ = {
@@ -315,7 +324,6 @@
 		E323EC992253D5CC000FE64D = {
 			isa = PBXGroup;
 			children = (
-				A421C19122EDAF520093CCA4 /* New Group */,
 				E323ECA42253D5CC000FE64D /* PCEX2 */,
 				E323ECA32253D5CC000FE64D /* Products */,
 				E3520B4D2253DB9000A870DC /* Frameworks */,
@@ -334,6 +342,7 @@
 		E323ECA42253D5CC000FE64D /* PCEX2 */ = {
 			isa = PBXGroup;
 			children = (
+				A45FC990231B52EC000760A2 /* Orders New */,
 				E3520B8F225405DF00A870DC /* Socket & API */,
 				E3520B5A2253E78B00A870DC /* WalkThroughVC */,
 				E3520B572253E73800A870DC /* Models */,
@@ -752,6 +761,7 @@
 				E31756022256B7AC00ED992A /* CSMTabBarControllerViewController.swift in Sources */,
 				A468ECE122F41BBE00623B22 /* SubBrokerDetails.swift in Sources */,
 				7F5BA41E22BAA8F300FF3A64 /* AppDataManager.swift in Sources */,
+				A42EC8A6232896A800DB8F2F /* AllOrders_HistoryVCNew.swift in Sources */,
 				E3BD64A5229DFDBF008F3F60 /* PasswrdChange.swift in Sources */,
 				E323ECAA2253D5CC000FE64D /* Orders_TradesVC.swift in Sources */,
 				7F5BA42722BAAB8B00FF3A64 /* PasscodeConfig.swift in Sources */,
@@ -766,11 +776,13 @@
 				E3520B562253E6F500A870DC /* UIViewController.swift in Sources */,
 				E370618822949160001019D1 /* LogsViewVC.swift in Sources */,
 				E39A29A122706C98006D66AF /* TabViewController.swift in Sources */,
+				A42EC8A22328880900DB8F2F /* OpenTableCell.swift in Sources */,
 				E3D31956227B77C00020B747 /* BankDetailsVC.swift in Sources */,
 				7F5BA42822BAAB8B00FF3A64 /* PasscodeViewController.swift in Sources */,
 				E3D3194F227B65170020B747 /* KYCVC.swift in Sources */,
 				E370619A22972F4F001019D1 /* USD_BaseDepositWithDraw.swift in Sources */,
 				E3520B92225406DF00A870DC /* Api.swift in Sources */,
+				A45FC994231B54E0000760A2 /* TradesTableCell.swift in Sources */,
 				E3520B8B225405B700A870DC /* Constants.swift in Sources */,
 				E3520B8C225405B700A870DC /* UserDetailsData.swift in Sources */,
 				E37A8CEF22A6ABCC00274E45 /* walletCell_New.swift in Sources */,
@@ -979,7 +991,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34CWAM8N2B;
+				DEVELOPMENT_TEAM = Z979VF3LL3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -990,7 +1002,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.panpcex;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PCEX2-Himanshu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -1005,7 +1017,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34CWAM8N2B;
+				DEVELOPMENT_TEAM = Z979VF3LL3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1016,7 +1028,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.panpcex;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PCEX2-Himanshu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

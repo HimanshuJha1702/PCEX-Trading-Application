@@ -34,7 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="feL-CA-4Jo">
-                        <rect key="frame" x="20" y="21.5" width="87" height="15.5"/>
+                        <rect key="frame" x="20" y="29" width="87" height="15.5"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                         <color key="textColor" red="0.066666666669999999" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -51,7 +51,7 @@
                         <color key="textColor" red="0.066666666666666666" green="0.22745098039215686" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="division of heading and content" translatesAutoresizingMaskIntoConstraints="NO" id="oJy-Xd-UMc">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="base box grey line" translatesAutoresizingMaskIntoConstraints="NO" id="oJy-Xd-UMc">
                         <rect key="frame" x="22" y="61" width="370" height="2"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
@@ -60,7 +60,7 @@
                     <constraint firstItem="y8P-gx-PGl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="0ud-Jh-iCo"/>
                     <constraint firstItem="ca2-F7-Guv" firstAttribute="leading" secondItem="y8P-gx-PGl" secondAttribute="trailing" constant="8" id="7v0-31-Gfv"/>
                     <constraint firstItem="ca2-F7-Guv" firstAttribute="leading" secondItem="feL-CA-4Jo" secondAttribute="trailing" constant="2" id="An1-zF-Z26"/>
-                    <constraint firstAttribute="bottom" secondItem="feL-CA-4Jo" secondAttribute="bottom" constant="32.5" id="Df4-if-h1m"/>
+                    <constraint firstAttribute="bottom" secondItem="feL-CA-4Jo" secondAttribute="bottom" constant="25" id="Df4-if-h1m"/>
                     <constraint firstAttribute="trailing" secondItem="Fa8-Fe-kRW" secondAttribute="trailing" constant="25" id="R54-hb-x4U"/>
                     <constraint firstItem="y8P-gx-PGl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="al1-sJ-gLc"/>
                     <constraint firstAttribute="bottom" secondItem="Fa8-Fe-kRW" secondAttribute="bottom" constant="23.5" id="bEM-sS-zbm"/>
@@ -78,11 +78,11 @@
                 <outlet property="lblDiscription" destination="Fa8-Fe-kRW" id="Xd2-nx-Ym6"/>
                 <outlet property="lblLogId" destination="y8P-gx-PGl" id="Z4S-hf-Klu"/>
             </connections>
-            <point key="canvasLocation" x="-3488.4057971014495" y="51.897321428571423"/>
+            <point key="canvasLocation" x="-3488.4057971014495" y="51.5625"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="division of heading and content" width="765" height="12"/>
+        <image name="base box grey line" width="706.5" height="4"/>
         <image name="division of values" width="6" height="282.5"/>
     </resources>
 </document>

@@ -22,3 +22,4 @@ target 'PCEX2' do
   pod 'BiometricAuthentication'
   pod 'iOSDropDown'
 end
+  

@@ -87,7 +87,7 @@ class SubBrokerDetailsEdit: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Am I being used or not")
+        //print("Am I being used or not")
         //self.subBrokerCode.delegate = self as UITextFieldDelegate
         self.subBrokerCode.autocapitalizationType = .words // for auto-capitaliztion of sub broker codes
         //self.remarkField.delegate = self as UITextFieldDelegate

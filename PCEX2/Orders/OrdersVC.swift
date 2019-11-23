@@ -186,7 +186,7 @@ class OrdersVC: UIViewController, UITableViewDataSource, UITableViewDelegate,ord
             }
             else
             {
-                orderCell.lblStatus.text = "canceled"
+                orderCell.lblStatus.text = "cancelled"
                 // orderCell.configureCellForIndexPath()
             }
         

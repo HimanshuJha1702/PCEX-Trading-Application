@@ -16,16 +16,22 @@ import SwiftyGif
 
 class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate  {
     
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var heightGraph: NSLayoutConstraint!
     
+    @IBOutlet weak var LtpStatusImage: UIImageView!
     @IBOutlet weak var lblCurrentLtp: UILabel!
+    
     @IBOutlet weak var lblVolume: UILabel!
     @IBOutlet weak var imgStatus: UIImageView!
     @IBOutlet weak var lbl24CloseHigh: UILabel!
     @IBOutlet weak var lbl24Volume: UILabel!
     
+    
+    @IBOutlet weak var lblMarketImage: UIImageView!
+    @IBOutlet weak var lblBuySellImage: UIImageView!
     @IBOutlet weak var lblAsk: UILabel!
     @IBOutlet weak var lblBid: UILabel!
     @IBOutlet weak var lblOpen: UILabel!
@@ -46,12 +52,10 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var txtBuyQty: UITextField!
     
-    @IBOutlet weak var lblBuySellSymbol: UILabel!
     @IBOutlet weak var lblTradeSymbol: UILabel!
     
     @IBOutlet weak var lblMarketTradeSymbol: UILabel!
     @IBOutlet weak var txtMarketCost: UITextField!
-    @IBOutlet weak var lblmarket: UILabel!
     
     @IBOutlet weak var lblTotalAmount: UILabel!
     
@@ -99,6 +103,7 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
     var currenciesListObj = [Int:CurrencyModel]()
     var comparisonNumber: Double?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -106,15 +111,15 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
         self.dropDownTable.dataSource = self
         self.txtBuyQty.delegate = self
         self.txtMarketCost.delegate = self
+      //  self.lblMarketImage.delegate = self as! SwiftyGifDelegate
         
+        LtpStatusImage.isHidden = false
         
         dropDownTable.register(CurrencyNameCell.self, forCellReuseIdentifier: "CurrencyNameCell")
         dropDownTable.register(UINib(nibName: "CurrencyNameCell", bundle: nil), forCellReuseIdentifier: "CurrencyNameCell")
-        
+
         Service.shared.subscribe(self)
-        
-        // Do any additional setup after loading the view.
-        
+
         if(script != nil)
         {
             adjustUIWithDetails()
@@ -176,11 +181,16 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
         lblClose.text = "Close: \(String(describing: script!.todayLow!))"
         lbl24CloseHigh.text = "24 Ch \(String(describing: script!.todayHigh!))"
         
-        lblBuySellSymbol.text = script!.symbolName
-        lblmarket.text = script!.market
         
         lblTradeSymbol.text = "\(script!.symbolName!) to Purchase"
         lblMarketTradeSymbol.text = "\(script!.market!) to Spend"
+
+
+        var imgPath1 = "https://www.pcex.io/assets/icons/\(script!.market!.lowercased()).png"
+        
+        var imgPath2 = "https://www.pcex.io/assets/icons/\(script!.symbolName!.lowercased()).png"
+        lblMarketImage.sd_setImage(with: URL(string: imgPath1), placeholderImage: UIImage(named: "placeholder.png"))
+        lblBuySellImage.sd_setImage(with: URL(string: imgPath2), placeholderImage: UIImage(named: "placeholder.png"))
         
         if(script!.market! == "USD")
         {
@@ -380,7 +390,7 @@ class DetailPlaceOrderVC: UIViewController, UITableViewDelegate, UITableViewData
     
     private func transactionHistory(){
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let destViewController : Orders_TradesVC = storyboard.instantiateViewController(withIdentifier: "pushToOT") as! Orders_TradesVC
+    let destViewController : AllOrders_HistoryVCNew = storyboard.instantiateViewController(withIdentifier: "OpenNewPage") as! AllOrders_HistoryVCNew
     destViewController.checkIsPipe = true
     self.navigationController!.pushViewController(destViewController, animated: true)
     }

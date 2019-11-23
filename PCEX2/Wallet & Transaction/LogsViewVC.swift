@@ -86,13 +86,12 @@ class LogsViewVC: UIViewController,UITableViewDataSource, UITableViewDelegate,lo
  
         //self.convertDateFormatter(date: dict["timeStamp"].stringValue)
         
-        
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80.0;
+        return 70.0;
     }
     
     func convertDateFormatter(date: String) -> String {

@@ -38,15 +38,26 @@ class TradesCell: UITableViewCell {
         {
             self.viewOutLayer.roundedAllCorner()
         }
-        
+    }
+
+    
+}
+
 //        self.viewOutLayer.layer.shadowColor = UIColor.black.cgColor
 //        self.viewOutLayer.layer.shadowOffset = CGSize(width: 5, height: 5)
 //        self.viewOutLayer.layer.shadowOpacity = 0.7
 //        self.viewOutLayer.layer.shadowRadius = 1
 //        self.viewOutLayer.layer.masksToBounds = false
-        
-        
-    }
 
-    
-}
+
+
+//private func transactionHistory(){
+//    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//    let destViewController : Orders_TradesVC = storyboard.instantiateViewController(withIdentifier: "pushToOT") as! Orders_TradesVC
+//    destViewController.checkIsPipe = true
+//    self.navigationController!.pushViewController(destViewController, animated: true)
+//}
+//
+//@IBAction func btnAlertAction(_ sender: Any) {
+//    self.transactionHistory()
+//}

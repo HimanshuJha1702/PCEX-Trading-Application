@@ -52,7 +52,8 @@ class ListerTableViewCell: UITableViewCell {
         priceLblOutlet.text = String(format:"%.4g%n", priceCurrent!)
         priceLblOutlet.textColor = (UIColor(hexString: VioletPCEX_CUSTOM))
         
-        changePerLblOutlet.text = scrip.todayChange
+        let stringValue = scrip.todayChange
+        changePerLblOutlet.text = stringValue! + "%"
         changePerLblOutlet.textColor = colorTheme?.foregroundColor
         
         //let volCur = Double(scrip.volume!)
@@ -64,7 +65,6 @@ class ListerTableViewCell: UITableViewCell {
         
         
         let symbol = (scrip.symbolName!).lowercased()
-        
         var imgPath = "https://www.pcex.io/assets/icons/\(symbol).png"
 
 

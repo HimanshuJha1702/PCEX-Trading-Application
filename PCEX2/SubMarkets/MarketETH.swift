@@ -171,19 +171,19 @@ class MarketETH: UIViewController, UITableViewDelegate, UITableViewDataSource {
 }
 extension MarketETH : PcexServiceListenerProtocol, PcexServiceListenerProtocolDemo {
     func receivedUpdates(_ scrip: CurrencyModel) {
-        
+
     }
-    
+
     func receivedUpdatesForUSD(_ scrip: CurrencyModel) {
-          
+
     }
-    
+
     func receivedUpdatesForFCC(_ scrip: CurrencyModel) {
-          
+
     }
-    
+
     func receivedUpdatesForBTC(_ scrip: CurrencyModel) {
-          
+
     }
     
     func receivedUpdatesForETH(_ scrip: CurrencyModel) {
